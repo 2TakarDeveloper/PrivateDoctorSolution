@@ -5,15 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 using DTD.PDS.Context;
 using DTD.PDS.Entity;
+using DTD.PDS.Entity.DatabaseTableClasses;
 
 namespace DTD.PDS.BLL.Repo
 {
     public class TestRepo
     {
-        public List<Test> GetAll(int patientID)
+        public List<Test> GetAll(int patientId)
         {
 
-            return new TestContext().GetAll(patientID);
+            return new TestContext().GetAll(patientId);
 
         }
 

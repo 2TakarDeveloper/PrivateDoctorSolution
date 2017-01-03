@@ -1,4 +1,4 @@
-﻿namespace PrivateDoctorSolution
+﻿namespace PrivateDoctorSolution.Controls
 {
     partial class ScheduleControler
     {

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DTD.PDS.Context;
 using DTD.PDS.Entity;
+using DTD.PDS.Entity.DatabaseTableClasses;
 
 namespace DTD.PDS.BLL.Repo
 {

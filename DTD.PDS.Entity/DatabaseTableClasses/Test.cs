@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace DTD.PDS.Entity
+namespace DTD.PDS.Entity.DatabaseTableClasses
 {
     public enum Status
     {

@@ -1,6 +1,6 @@
 ﻿namespace PrivateDoctorSolution
 {
-    partial class Form2
+    partial class DashBoard
     {
         /// <summary>
         /// Required designer variable.

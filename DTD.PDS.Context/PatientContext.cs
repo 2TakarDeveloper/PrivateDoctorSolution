@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DTD.PDS.Entity;
+using DTD.PDS.Entity.DatabaseTableClasses;
 
 namespace DTD.PDS.Context
 {

@@ -1,23 +1,16 @@
-﻿using Syncfusion.Windows.Forms;
-using Syncfusion.Windows.Forms.Tools;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using System;
 using System.Drawing;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using PrivateDoctorSolution.Controls;
+using Syncfusion.Windows.Forms;
 
 namespace PrivateDoctorSolution
 {
-    public partial class Form2 : MetroForm
+    public partial class DashBoard : MetroForm
     {
 
        
-        public Form2()
+        public DashBoard()
         {
             InitializeComponent();
             SettingUpNevDrawer();

@@ -2,6 +2,7 @@
 using System.Data.Entity;
 
 using DTD.PDS.Entity;
+using DTD.PDS.Entity.DatabaseTableClasses;
 
 namespace DTD.PDS.Context
 {
