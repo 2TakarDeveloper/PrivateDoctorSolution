@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.navigationDrawer1 = new Syncfusion.Windows.Forms.Tools.NavigationDrawer();
+            this.drawerHeaderProfile = new Syncfusion.Windows.Forms.Tools.DrawerHeader();
             this.drawerMenuItemSchedule = new Syncfusion.Windows.Forms.Tools.DrawerMenuItem();
             this.drawerMenuItem2 = new Syncfusion.Windows.Forms.Tools.DrawerMenuItem();
             this.drawerMenuItemEmails = new Syncfusion.Windows.Forms.Tools.DrawerMenuItem();
             this.drawerMenuItemLock = new Syncfusion.Windows.Forms.Tools.DrawerMenuItem();
             this.drawerMenuItemLogout = new Syncfusion.Windows.Forms.Tools.DrawerMenuItem();
-            this.Menu = new Syncfusion.Windows.Forms.ButtonAdv();
-            this.drawerHeaderProfile = new Syncfusion.Windows.Forms.Tools.DrawerHeader();
+            this.MenuBar = new Syncfusion.Windows.Forms.ButtonAdv();
             this.SuspendLayout();
             // 
             // navigationDrawer1
@@ -58,6 +58,22 @@
             this.navigationDrawer1.Text = "navigationDrawer1";
             this.navigationDrawer1.TouchThreshold = 500;
             this.navigationDrawer1.Transition = Syncfusion.Windows.Forms.Tools.Transition.Push;
+            // 
+            // drawerHeaderProfile
+            // 
+            this.drawerHeaderProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(73)))), ((int)(((byte)(164)))));
+            this.drawerHeaderProfile.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.drawerHeaderProfile.HeaderImage = global::PrivateDoctorSolution.Properties.Resources.imageListAdv1_Images;
+            this.drawerHeaderProfile.HeaderText = "drawerHeaderProfile";
+            this.drawerHeaderProfile.Location = new System.Drawing.Point(2, 0);
+            this.drawerHeaderProfile.Margin = new System.Windows.Forms.Padding(0);
+            this.drawerHeaderProfile.MinimumSize = new System.Drawing.Size(200, 50);
+            this.drawerHeaderProfile.Name = "drawerHeaderProfile";
+            this.drawerHeaderProfile.Size = new System.Drawing.Size(200, 120);
+            this.drawerHeaderProfile.TabIndex = 5;
+            this.drawerHeaderProfile.Text = "Mr.Doctor";
+            this.drawerHeaderProfile.TextAlign = Syncfusion.Windows.Forms.Tools.TextAlignment.Right;
+            this.drawerHeaderProfile.TextColor = System.Drawing.Color.White;
             // 
             // drawerMenuItemSchedule
             // 
@@ -151,44 +167,28 @@
             this.drawerMenuItemLogout.TextColor = System.Drawing.Color.White;
             this.drawerMenuItemLogout.Click += new System.EventHandler(this.drawerMenuItemLogout_Click);
             // 
-            // Menu
+            // MenuBar
             // 
-            this.Menu.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
-            this.Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.Menu.BeforeTouchSize = new System.Drawing.Size(109, 44);
-            this.Menu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.Menu.ForeColor = System.Drawing.Color.White;
-            this.Menu.Image = global::PrivateDoctorSolution.Properties.Resources.Menu;
-            this.Menu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Menu.IsBackStageButton = false;
-            this.Menu.KeepFocusRectangle = false;
-            this.Menu.Location = new System.Drawing.Point(3, 0);
-            this.Menu.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.Menu.Name = "Menu";
-            this.Menu.Size = new System.Drawing.Size(109, 44);
-            this.Menu.TabIndex = 1;
-            this.Menu.Text = "Menu";
-            this.Menu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Menu.UseVisualStyle = true;
-            this.Menu.Click += new System.EventHandler(this.Menu_Click);
+            this.MenuBar.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
+            this.MenuBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.MenuBar.BeforeTouchSize = new System.Drawing.Size(109, 44);
+            this.MenuBar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.MenuBar.ForeColor = System.Drawing.Color.White;
+            this.MenuBar.Image = global::PrivateDoctorSolution.Properties.Resources.Menu;
+            this.MenuBar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.MenuBar.IsBackStageButton = false;
+            this.MenuBar.KeepFocusRectangle = false;
+            this.MenuBar.Location = new System.Drawing.Point(3, 0);
+            this.MenuBar.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.MenuBar.Name = "MenuBar";
+            this.MenuBar.Size = new System.Drawing.Size(109, 44);
+            this.MenuBar.TabIndex = 1;
+            this.MenuBar.Text = "Menu";
+            this.MenuBar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.MenuBar.UseVisualStyle = true;
+            this.MenuBar.Click += new System.EventHandler(this.Menu_Click);
             // 
-            // drawerHeaderProfile
-            // 
-            this.drawerHeaderProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(73)))), ((int)(((byte)(164)))));
-            this.drawerHeaderProfile.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.drawerHeaderProfile.HeaderImage = global::PrivateDoctorSolution.Properties.Resources.imageListAdv1_Images;
-            this.drawerHeaderProfile.HeaderText = "Mr.Doctor";
-            this.drawerHeaderProfile.Location = new System.Drawing.Point(2, 0);
-            this.drawerHeaderProfile.Margin = new System.Windows.Forms.Padding(0);
-            this.drawerHeaderProfile.MinimumSize = new System.Drawing.Size(200, 50);
-            this.drawerHeaderProfile.Name = "drawerHeaderProfile";
-            this.drawerHeaderProfile.Size = new System.Drawing.Size(200, 120);
-            this.drawerHeaderProfile.TabIndex = 5;
-            this.drawerHeaderProfile.Text = "Mr.Doctor";
-            this.drawerHeaderProfile.TextAlign = Syncfusion.Windows.Forms.Tools.TextAlignment.Right;
-            this.drawerHeaderProfile.TextColor = System.Drawing.Color.White;
-            // 
-            // Form2
+            // DashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -196,10 +196,10 @@
             this.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
             this.CaptionBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
             this.ClientSize = new System.Drawing.Size(814, 473);
-            this.Controls.Add(this.Menu);
+            this.Controls.Add(this.MenuBar);
             this.Controls.Add(this.navigationDrawer1);
             this.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.Name = "Form2";
+            this.Name = "DashBoard";
             this.Padding = new System.Windows.Forms.Padding(0, 50, 0, 0);
             this.ResumeLayout(false);
 
@@ -213,7 +213,7 @@
         private Syncfusion.Windows.Forms.Tools.DrawerMenuItem drawerMenuItemEmails;
         private Syncfusion.Windows.Forms.Tools.DrawerMenuItem drawerMenuItemLock;
         private Syncfusion.Windows.Forms.Tools.DrawerMenuItem drawerMenuItemLogout;
-        private Syncfusion.Windows.Forms.ButtonAdv Menu;
+        private Syncfusion.Windows.Forms.ButtonAdv MenuBar;
         private Syncfusion.Windows.Forms.Tools.DrawerHeader drawerHeaderProfile;
     }
 }
