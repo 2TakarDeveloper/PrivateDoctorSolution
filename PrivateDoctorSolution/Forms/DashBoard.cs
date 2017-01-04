@@ -63,6 +63,9 @@ namespace PrivateDoctorSolution
         private void drawerMenuItemEmails_Click(object sender, EventArgs e)
         {
             this.navigationDrawer1.ContentViewContainer.Controls.Clear();
+            EmailControl ec = new EmailControl();
+            ec.Dock = DockStyle.Fill;
+            this.navigationDrawer1.ContentViewContainer.Controls.Add(ec);
             this.navigationDrawer1.ToggleDrawer();
         }
 

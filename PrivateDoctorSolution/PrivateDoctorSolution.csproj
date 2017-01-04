@@ -44,15 +44,61 @@
     <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.BulletGraph.Windows, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Calculate.Base, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Chart.Base, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Chart.Windows, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Compression.Base, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Diagram.Base, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Diagram.Windows, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.DocIO.Base, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.DocIO.Windows, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Edit.Windows, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Gauge.Windows, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Grid.Base, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Grid.Grouping.Base, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Grid.Grouping.Windows, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Grid.Windows, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.GridConverter.Windows, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.GridHelperClasses.Windows, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Grouping.Base, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Grouping.Windows, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.HTMLUI.Base, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.HTMLUI.Windows, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Linq.Base, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.OfficeChart.Base, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Pdf.Base, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.PdfViewer.Windows, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.PivotAnalysis.Base, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.PivotAnalysis.Windows, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.PivotChart.Windows, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Presentation.Base, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.ProjIO.Base, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Schedule.Base, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Schedule.Windows, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Scripting.Base, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.SfBarcode.Windows, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Shared.Base, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Shared.Windows, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.SpellChecker.Base, Version=14.4460.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Spreadsheet.Windows, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Tools.Base, Version=14.4460.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Tools.Windows, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.TreeMap.Windows, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.XlsIO.Base, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.XlsIO.Windows, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -70,6 +116,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\EmailControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\EmailControl.Designer.cs">
+      <DependentUpon>EmailControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\InboxMailControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\InboxMailControl.Designer.cs">
+      <DependentUpon>InboxMailControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PatientControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PatientControl.Designer.cs">
+      <DependentUpon>PatientControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\DashBoard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +149,15 @@
       <DependentUpon>ScheduleControler.cs</DependentUpon>
     </Compile>
     <Compile Include="SimpleScheduleDataProvider.cs" />
+    <EmbeddedResource Include="Controls\EmailControl.resx">
+      <DependentUpon>EmailControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\InboxMailControl.resx">
+      <DependentUpon>InboxMailControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PatientControl.resx">
+      <DependentUpon>PatientControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,7 +204,9 @@
   <ItemGroup>
     <None Include="Resources\imageListAdv1.Images.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="MetroFramework.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

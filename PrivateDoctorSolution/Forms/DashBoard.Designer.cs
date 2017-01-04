@@ -109,7 +109,7 @@
             this.drawerMenuItem2.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(140)))), ((int)(((byte)(0)))));
             this.drawerMenuItem2.Size = new System.Drawing.Size(200, 50);
             this.drawerMenuItem2.TabIndex = 1;
-            this.drawerMenuItem2.Text = "Apointment";
+            this.drawerMenuItem2.Text = "Patient List";
             this.drawerMenuItem2.TextColor = System.Drawing.Color.White;
             // 
             // drawerMenuItemEmails
