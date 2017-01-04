@@ -5,22 +5,16 @@
 // licensing@syncfusion.com. Any infringement will be prosecuted under
 // applicable laws. 
 #endregion
+
 using System;
-using System.Globalization;
-using System.Drawing;
 using System.Collections;
-using System.ComponentModel;
-using System.Windows.Forms;
-using System.Data;
 using System.IO;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters;
 using System.Runtime.Serialization.Formatters.Binary;
 using Syncfusion.Schedule;
-using Syncfusion.Windows.Forms.Schedule;
 
-
-namespace GridScheduleSample
+namespace PrivateDoctorSolution
 {
 
     #region DataProvider
@@ -315,7 +309,7 @@ namespace GridScheduleSample
             Stream s = File.OpenRead(fileName);
             try
             {
-                AppDomain.CurrentDomain.AssemblyResolve += new ResolveEventHandler(Syncfusion.ScheduleWindowsAssembly.AssemblyResolver);
+                AppDomain.CurrentDomain.AssemblyResolve += Syncfusion.ScheduleWindowsAssembly.AssemblyResolver;
                 BinaryFormatter b = new BinaryFormatter();
                 b.AssemblyFormat = FormatterAssemblyStyle.Simple;
                 object obj = b.Deserialize(s);
@@ -325,7 +319,7 @@ namespace GridScheduleSample
             finally
             {
                 s.Close();
-                AppDomain.CurrentDomain.AssemblyResolve -= new ResolveEventHandler(Syncfusion.ScheduleWindowsAssembly.AssemblyResolver);
+                AppDomain.CurrentDomain.AssemblyResolve -= Syncfusion.ScheduleWindowsAssembly.AssemblyResolver;
             }
             return t;
         }

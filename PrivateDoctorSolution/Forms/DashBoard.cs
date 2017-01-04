@@ -2,8 +2,8 @@
 using System.Drawing;
 using System.Windows.Forms;
 using PrivateDoctorSolution.Controls;
+using PrivateDoctorSolution.Controls.Mail;
 using Syncfusion.Windows.Forms;
-using PrivateDoctorSolution.Forms;
 
 namespace PrivateDoctorSolution
 {

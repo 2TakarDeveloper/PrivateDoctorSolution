@@ -5,17 +5,12 @@
 // licensing@syncfusion.com. Any infringement will be prosecuted under
 // applicable laws. 
 #endregion
-using DTD.PDS.UtilityClasses;
+
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-
-using System.Text;
 using System.Windows.Forms;
+using DTD.PDS.UtilityClasses;
 
-namespace PrivateDoctorSolution.Forms
+namespace PrivateDoctorSolution
 {
     public partial class LockForm : Syncfusion.Windows.Forms.MetroForm
     {

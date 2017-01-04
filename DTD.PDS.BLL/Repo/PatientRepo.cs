@@ -44,11 +44,15 @@ namespace DTD.PDS.BLL.Repo
         }
 
 
-        public bool Remove(Patient patient)
+        public bool Remove(List<Patient> patients)
         {
             try
             {
-                new PatientContext().Remove(patient);
+                foreach (var patient in patients)
+                {
+                    new PatientContext().Remove(patient);
+                }
+                
                 return true;
 
             }

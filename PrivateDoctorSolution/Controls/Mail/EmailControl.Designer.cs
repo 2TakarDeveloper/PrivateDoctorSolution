@@ -1,4 +1,4 @@
-﻿namespace PrivateDoctorSolution.Controls
+﻿namespace PrivateDoctorSolution.Controls.Mail
 {
     partial class EmailControl
     {

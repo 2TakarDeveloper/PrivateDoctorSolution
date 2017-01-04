@@ -23,7 +23,7 @@ namespace DTD.PDS.Context
         {
             using (var context = new DatabaseContext())
             {
-                return (from patients in context.Patients where patients.Name == name select patients).ToList();
+                return (from patients in context.Patients where patients.Name.Contains(name) select patients).ToList();
             }
         }
 

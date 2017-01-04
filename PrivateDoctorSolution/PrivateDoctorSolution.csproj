@@ -12,6 +12,22 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\tazim\Desktop\Publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,8 +48,19 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>0FE3DDB151B4FC7F819BE2E4C2FE43419C8F49F2</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>PrivateDoctorSolution_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevComponents.DotNetBar2, Version=14.0.0.5, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
@@ -44,6 +71,9 @@
     </Reference>
     <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>C:\Users\tazim\Source\Repos\ShopIM\ShopIM\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.Grid.Base, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Grid.Windows, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
@@ -74,16 +104,16 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controls\EmailControl.cs">
+    <Compile Include="Controls\Mail\EmailControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\EmailControl.Designer.cs">
+    <Compile Include="Controls\Mail\EmailControl.Designer.cs">
       <DependentUpon>EmailControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\InboxMailControl.cs">
+    <Compile Include="Controls\Mail\InboxMailControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\InboxMailControl.designer.cs">
+    <Compile Include="Controls\Mail\InboxMailControl.designer.cs">
       <DependentUpon>InboxMailControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\PatientControl.cs">
@@ -119,10 +149,10 @@
       <DependentUpon>ScheduleControler.cs</DependentUpon>
     </Compile>
     <Compile Include="SimpleScheduleDataProvider.cs" />
-    <EmbeddedResource Include="Controls\EmailControl.resx">
+    <EmbeddedResource Include="Controls\Mail\EmailControl.resx">
       <DependentUpon>EmailControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\InboxMailControl.resx">
+    <EmbeddedResource Include="Controls\Mail\InboxMailControl.resx">
       <DependentUpon>InboxMailControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\PatientControl.resx">
@@ -151,6 +181,7 @@
       <DependentUpon>ScheduleControler.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="PrivateDoctorSolution_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -207,6 +238,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Search-WF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

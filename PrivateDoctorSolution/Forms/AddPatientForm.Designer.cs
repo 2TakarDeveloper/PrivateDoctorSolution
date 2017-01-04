@@ -5,7 +5,7 @@
 // licensing@syncfusion.com. Any infringement will be prosecuted under
 // applicable laws. 
 #endregion
-namespace PrivateDoctorSolution.Forms
+namespace PrivateDoctorSolution
 {
     partial class AddPatientForm
     {
@@ -41,14 +41,14 @@ namespace PrivateDoctorSolution.Forms
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dateTimePickerAdv1 = new Syncfusion.Windows.Forms.Tools.DateTimePickerAdv();
-            this.textBoxExt1 = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
-            this.textBoxExt2 = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
-            this.textBoxExt3 = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
-            this.Addbtn = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.MobileTextBox = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+            this.EmailTextBox = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+            this.NameTextBox = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+            this.Addbutton = new Syncfusion.Windows.Forms.ButtonAdv();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimePickerAdv1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textBoxExt1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textBoxExt2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textBoxExt3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MobileTextBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmailTextBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NameTextBox)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -98,7 +98,7 @@ namespace PrivateDoctorSolution.Forms
             // dateTimePickerAdv1
             // 
             this.dateTimePickerAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.Flat;
-            this.dateTimePickerAdv1.BorderColor = System.Drawing.SystemColors.ControlDark;
+            this.dateTimePickerAdv1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.dateTimePickerAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.dateTimePickerAdv1.CalendarForeColor = System.Drawing.SystemColors.ControlText;
             this.dateTimePickerAdv1.CalendarSize = new System.Drawing.Size(189, 176);
@@ -117,81 +117,82 @@ namespace PrivateDoctorSolution.Forms
             this.dateTimePickerAdv1.TabIndex = 4;
             this.dateTimePickerAdv1.Value = new System.DateTime(2017, 1, 4, 0, 35, 4, 416);
             // 
-            // textBoxExt1
+            // MobileTextBox
             // 
-            this.textBoxExt1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxExt1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.textBoxExt1.BeforeTouchSize = new System.Drawing.Size(268, 29);
-            this.textBoxExt1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.textBoxExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxExt1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxExt1.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(150)))), ((int)(((byte)(9)))));
-            this.textBoxExt1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxExt1.Location = new System.Drawing.Point(185, 97);
-            this.textBoxExt1.Margin = new System.Windows.Forms.Padding(3, 8, 10, 3);
-            this.textBoxExt1.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(150)))), ((int)(((byte)(9)))));
-            this.textBoxExt1.Name = "textBoxExt1";
-            this.textBoxExt1.Size = new System.Drawing.Size(268, 29);
-            this.textBoxExt1.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.textBoxExt1.TabIndex = 11;
+            this.MobileTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.MobileTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.MobileTextBox.BeforeTouchSize = new System.Drawing.Size(268, 29);
+            this.MobileTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.MobileTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.MobileTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.MobileTextBox.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(150)))), ((int)(((byte)(9)))));
+            this.MobileTextBox.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MobileTextBox.Location = new System.Drawing.Point(185, 97);
+            this.MobileTextBox.Margin = new System.Windows.Forms.Padding(3, 8, 10, 3);
+            this.MobileTextBox.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(150)))), ((int)(((byte)(9)))));
+            this.MobileTextBox.Name = "MobileTextBox";
+            this.MobileTextBox.Size = new System.Drawing.Size(268, 29);
+            this.MobileTextBox.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
+            this.MobileTextBox.TabIndex = 11;
             // 
-            // textBoxExt2
+            // EmailTextBox
             // 
-            this.textBoxExt2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxExt2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.textBoxExt2.BeforeTouchSize = new System.Drawing.Size(268, 29);
-            this.textBoxExt2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.textBoxExt2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxExt2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxExt2.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(150)))), ((int)(((byte)(9)))));
-            this.textBoxExt2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxExt2.Location = new System.Drawing.Point(185, 57);
-            this.textBoxExt2.Margin = new System.Windows.Forms.Padding(3, 8, 10, 3);
-            this.textBoxExt2.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(150)))), ((int)(((byte)(9)))));
-            this.textBoxExt2.Name = "textBoxExt2";
-            this.textBoxExt2.Size = new System.Drawing.Size(268, 29);
-            this.textBoxExt2.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.textBoxExt2.TabIndex = 12;
+            this.EmailTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.EmailTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.EmailTextBox.BeforeTouchSize = new System.Drawing.Size(268, 29);
+            this.EmailTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.EmailTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EmailTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.EmailTextBox.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(150)))), ((int)(((byte)(9)))));
+            this.EmailTextBox.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmailTextBox.Location = new System.Drawing.Point(185, 57);
+            this.EmailTextBox.Margin = new System.Windows.Forms.Padding(3, 8, 10, 3);
+            this.EmailTextBox.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(150)))), ((int)(((byte)(9)))));
+            this.EmailTextBox.Name = "EmailTextBox";
+            this.EmailTextBox.Size = new System.Drawing.Size(268, 29);
+            this.EmailTextBox.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
+            this.EmailTextBox.TabIndex = 12;
             // 
-            // textBoxExt3
+            // NameTextBox
             // 
-            this.textBoxExt3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxExt3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.textBoxExt3.BeforeTouchSize = new System.Drawing.Size(268, 29);
-            this.textBoxExt3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.textBoxExt3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxExt3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxExt3.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(150)))), ((int)(((byte)(9)))));
-            this.textBoxExt3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxExt3.Location = new System.Drawing.Point(185, 17);
-            this.textBoxExt3.Margin = new System.Windows.Forms.Padding(3, 8, 10, 3);
-            this.textBoxExt3.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(150)))), ((int)(((byte)(9)))));
-            this.textBoxExt3.Name = "textBoxExt3";
-            this.textBoxExt3.Size = new System.Drawing.Size(268, 29);
-            this.textBoxExt3.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.textBoxExt3.TabIndex = 13;
+            this.NameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.NameTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.NameTextBox.BeforeTouchSize = new System.Drawing.Size(268, 29);
+            this.NameTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.NameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.NameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.NameTextBox.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(150)))), ((int)(((byte)(9)))));
+            this.NameTextBox.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameTextBox.Location = new System.Drawing.Point(185, 17);
+            this.NameTextBox.Margin = new System.Windows.Forms.Padding(3, 8, 10, 3);
+            this.NameTextBox.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(150)))), ((int)(((byte)(9)))));
+            this.NameTextBox.Name = "NameTextBox";
+            this.NameTextBox.Size = new System.Drawing.Size(268, 29);
+            this.NameTextBox.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
+            this.NameTextBox.TabIndex = 13;
             // 
-            // Addbtn
+            // Addbutton
             // 
-            this.Addbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Addbtn.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
-            this.Addbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.Addbtn.BeforeTouchSize = new System.Drawing.Size(74, 37);
-            this.Addbtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.Addbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.Addbtn.Image = global::PrivateDoctorSolution.Properties.Resources.Addbtn;
-            this.Addbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Addbtn.IsBackStageButton = false;
-            this.Addbtn.KeepFocusRectangle = false;
-            this.Addbtn.Location = new System.Drawing.Point(379, 170);
-            this.Addbtn.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
-            this.Addbtn.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(150)))), ((int)(((byte)(9)))));
-            this.Addbtn.Name = "Addbtn";
-            this.Addbtn.Size = new System.Drawing.Size(74, 37);
-            this.Addbtn.TabIndex = 14;
-            this.Addbtn.Text = "Add";
-            this.Addbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Addbtn.UseVisualStyle = true;
+            this.Addbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Addbutton.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
+            this.Addbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.Addbutton.BeforeTouchSize = new System.Drawing.Size(74, 37);
+            this.Addbutton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.Addbutton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.Addbutton.Image = global::PrivateDoctorSolution.Properties.Resources.Addbtn;
+            this.Addbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Addbutton.IsBackStageButton = false;
+            this.Addbutton.KeepFocusRectangle = false;
+            this.Addbutton.Location = new System.Drawing.Point(379, 170);
+            this.Addbutton.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
+            this.Addbutton.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(150)))), ((int)(((byte)(9)))));
+            this.Addbutton.Name = "Addbutton";
+            this.Addbutton.Size = new System.Drawing.Size(74, 37);
+            this.Addbutton.TabIndex = 14;
+            this.Addbutton.Text = "Add";
+            this.Addbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Addbutton.UseVisualStyle = true;
+            this.Addbutton.Click += new System.EventHandler(this.Addbutton_Click);
             // 
             // AddPatientForm
             // 
@@ -203,10 +204,10 @@ namespace PrivateDoctorSolution.Forms
             this.CaptionBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
             this.CaptionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
             this.ClientSize = new System.Drawing.Size(496, 219);
-            this.Controls.Add(this.Addbtn);
-            this.Controls.Add(this.textBoxExt3);
-            this.Controls.Add(this.textBoxExt2);
-            this.Controls.Add(this.textBoxExt1);
+            this.Controls.Add(this.Addbutton);
+            this.Controls.Add(this.NameTextBox);
+            this.Controls.Add(this.EmailTextBox);
+            this.Controls.Add(this.MobileTextBox);
             this.Controls.Add(this.dateTimePickerAdv1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -220,9 +221,9 @@ namespace PrivateDoctorSolution.Forms
             this.ShowMaximizeBox = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             ((System.ComponentModel.ISupportInitialize)(this.dateTimePickerAdv1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textBoxExt1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textBoxExt2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textBoxExt3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MobileTextBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmailTextBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NameTextBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -235,9 +236,9 @@ namespace PrivateDoctorSolution.Forms
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private Syncfusion.Windows.Forms.Tools.DateTimePickerAdv dateTimePickerAdv1;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt textBoxExt1;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt textBoxExt2;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt textBoxExt3;
-        private Syncfusion.Windows.Forms.ButtonAdv Addbtn;
+        private Syncfusion.Windows.Forms.Tools.TextBoxExt MobileTextBox;
+        private Syncfusion.Windows.Forms.Tools.TextBoxExt EmailTextBox;
+        private Syncfusion.Windows.Forms.Tools.TextBoxExt NameTextBox;
+        private Syncfusion.Windows.Forms.ButtonAdv Addbutton;
     }
 }

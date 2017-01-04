@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Windows.Forms;
-using GridScheduleSample;
 using Syncfusion.Windows.Forms.Schedule;
 using System.IO;
 
