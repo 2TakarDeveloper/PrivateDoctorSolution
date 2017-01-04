@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=14.0.0.5, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
@@ -68,13 +69,46 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\EmailControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\EmailControl.Designer.cs">
+      <DependentUpon>EmailControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\InboxMailControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\InboxMailControl.designer.cs">
+      <DependentUpon>InboxMailControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PatientControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PatientControl.designer.cs">
+      <DependentUpon>PatientControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddPatientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddPatientForm.Designer.cs">
+      <DependentUpon>AddPatientForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\DashBoard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\DashBoard.Designer.cs">
       <DependentUpon>DashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LockForm.Designer.cs">
+      <DependentUpon>LockForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -85,8 +119,23 @@
       <DependentUpon>ScheduleControler.cs</DependentUpon>
     </Compile>
     <Compile Include="SimpleScheduleDataProvider.cs" />
+    <EmbeddedResource Include="Controls\EmailControl.resx">
+      <DependentUpon>EmailControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\InboxMailControl.resx">
+      <DependentUpon>InboxMailControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PatientControl.resx">
+      <DependentUpon>PatientControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddPatientForm.resx">
+      <DependentUpon>AddPatientForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LockForm.resx">
+      <DependentUpon>LockForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -124,6 +173,10 @@
       <Project>{b229e9e4-d562-41b0-968a-d629f2a769cd}</Project>
       <Name>DTD.PDS.Entity</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DTD.PDS.UtilityClasses\DTD.PDS.UtilityClasses.csproj">
+      <Project>{264983cb-530a-4aff-961e-e5b5fc9ca892}</Project>
+      <Name>DTD.PDS.UtilityClasses</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Menu.png" />
@@ -131,7 +184,30 @@
   <ItemGroup>
     <None Include="Resources\imageListAdv1.Images.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Add-New.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add-New1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add-New2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add-New3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Addbtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File Edit-WF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash can - 03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search-WF.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

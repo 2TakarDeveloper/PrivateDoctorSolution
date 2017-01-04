@@ -3,6 +3,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using PrivateDoctorSolution.Controls;
 using Syncfusion.Windows.Forms;
+using PrivateDoctorSolution.Forms;
 
 namespace PrivateDoctorSolution
 {
@@ -57,18 +58,31 @@ namespace PrivateDoctorSolution
         private void drawerMenuItemLock_Click(object sender, EventArgs e)
         {
             this.navigationDrawer1.ContentViewContainer.Controls.Clear();
-            this.navigationDrawer1.ToggleDrawer();
+            LockForm lc = new LockForm();
+            lc.ShowDialog(this);
         }
 
         private void drawerMenuItemEmails_Click(object sender, EventArgs e)
         {
             this.navigationDrawer1.ContentViewContainer.Controls.Clear();
+            EmailControl ec = new EmailControl();
+            ec.Dock = DockStyle.Fill;
+            this.navigationDrawer1.ContentViewContainer.Controls.Add(ec);
             this.navigationDrawer1.ToggleDrawer();
         }
 
         private void drawerMenuItemLogout_Click(object sender, EventArgs e)
         {
             this.navigationDrawer1.ContentViewContainer.Controls.Clear();
+            this.navigationDrawer1.ToggleDrawer();
+        }
+
+        private void drawerMenuItemPatient_Click(object sender, EventArgs e)
+        {
+            this.navigationDrawer1.ContentViewContainer.Controls.Clear();
+            PatientControl pc = new PatientControl();
+            pc.Dock = DockStyle.Fill;
+            this.navigationDrawer1.ContentViewContainer.Controls.Add(pc);
             this.navigationDrawer1.ToggleDrawer();
         }
     }
