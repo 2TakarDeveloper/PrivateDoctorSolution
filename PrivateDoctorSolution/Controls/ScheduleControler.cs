@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
-using Syncfusion.Windows.Forms.Schedule;
+//using Syncfusion.Windows.Forms.Schedule;
 using System.IO;
+using Syncfusion.Windows.Forms.Schedule;
 
 namespace PrivateDoctorSolution.Controls
 {
@@ -32,7 +33,7 @@ namespace PrivateDoctorSolution.Controls
 
             }
 
-            scheduleControl1.ScheduleType = ScheduleViewType.Month;
+            scheduleControl1.ScheduleType = ScheduleViewType.Day;
             scheduleControl1.DataSource = data;
 
 
