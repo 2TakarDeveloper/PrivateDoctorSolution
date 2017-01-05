@@ -14,7 +14,7 @@ namespace DTD.PDS.Context
         {
             using (var context = new DatabaseContext())
             {
-                return (from tests in context.Tests where tests.PatientId==patientId select tests).ToList();
+                return (from tests in context.Tests where tests.PrescriptionId==patientId select tests).ToList();
             }
         }
 
@@ -64,7 +64,7 @@ namespace DTD.PDS.Context
                 var item = context.Tests.SingleOrDefault(a => a.Id == test.Id);
 
                 if (item == null) return false;
-                item.PatientId = test.PatientId;
+                item.PrescriptionId = test.PrescriptionId;
                 item.IssueDate = test.IssueDate;
                 item.Status = test.Status;
                 item.TestName = test.TestName;

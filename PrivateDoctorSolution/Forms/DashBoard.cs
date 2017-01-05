@@ -4,7 +4,6 @@ using System.Windows.Forms;
 using PrivateDoctorSolution.Controls;
 using PrivateDoctorSolution.Controls.Mail;
 using Syncfusion.Windows.Forms;
-using PrivateDoctorSolution.Controls.Prescription;
 
 namespace PrivateDoctorSolution
 {
@@ -18,77 +17,73 @@ namespace PrivateDoctorSolution
             SettingUpNevDrawer();
           
         }
-        public void SettingUpNevDrawer()
+
+        private void SettingUpNevDrawer()
         {
-            this.navigationDrawer1.ContentViewContainer.Padding = new System.Windows.Forms.Padding(15, 15, 15, 15);
-            this.navigationDrawer1.ContentViewContainer.BackColor = Color.White;
+            navigationDrawer1.ContentViewContainer.Padding = new Padding(15, 15, 15, 15);
+            navigationDrawer1.ContentViewContainer.BackColor = Color.White;
 
-            this.navigationDrawer1.DrawerPanelContainer.BorderStyle = BorderStyle.None;
-            this.navigationDrawer1.DrawerPanelContainer.Padding = new Padding(0, 0, 3, 0);
-            this.navigationDrawer1.TouchThreshold = 500;
+            navigationDrawer1.DrawerPanelContainer.BorderStyle = BorderStyle.None;
+            navigationDrawer1.DrawerPanelContainer.Padding = new Padding(0, 0, 3, 0);
+            navigationDrawer1.TouchThreshold = 500;
 
-            this.navigationDrawer1.DrawerPanelContainer.BorderStyle = BorderStyle.None;
-            this.navigationDrawer1.DrawerPanelContainer.Paint += new PaintEventHandler(DrawerPanelContainer_Paint);
+            navigationDrawer1.DrawerPanelContainer.BorderStyle = BorderStyle.None;
+            navigationDrawer1.DrawerPanelContainer.Paint += DrawerPanelContainer_Paint;
 
-            this.navigationDrawer1.DrawerPanelContainer.BackColor = Color.FromArgb(53,53,53);
+            navigationDrawer1.DrawerPanelContainer.BackColor = Color.FromArgb(53, 53, 53);
         }
-      
-        void DrawerPanelContainer_Paint(object sender, PaintEventArgs e)
-        {
-            using (SolidBrush brush = new SolidBrush(BackColor))
-                e.Graphics.FillRectangle(brush, this.navigationDrawer1.DrawerPanelContainer.ClientRectangle);
 
-            Pen pen = new Pen(System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42))))));
-            e.Graphics.DrawRectangle(pen, 0, 0, this.navigationDrawer1.DrawerPanelContainer.ClientSize.Width - 3, this.navigationDrawer1.DrawerPanelContainer.ClientSize.Height - 1);
+        private void DrawerPanelContainer_Paint(object sender, PaintEventArgs e)
+        {
+            using (var brush = new SolidBrush(BackColor))
+            {
+                e.Graphics.FillRectangle(brush, navigationDrawer1.DrawerPanelContainer.ClientRectangle);
+            }
+
+            var pen = new Pen(Color.FromArgb(42, 42, 42));
+            e.Graphics.DrawRectangle(pen, 0, 0, navigationDrawer1.DrawerPanelContainer.ClientSize.Width - 3,
+                navigationDrawer1.DrawerPanelContainer.ClientSize.Height - 1);
         }
 
         private void Menu_Click(object sender, EventArgs e)
         {
-            this.navigationDrawer1.ToggleDrawer();
+            navigationDrawer1.ToggleDrawer();
         }
 
         private void drawerMenuItemSchedule_Click(object sender, EventArgs e)
         {
-            this.navigationDrawer1.ContentViewContainer.Controls.Clear();
-            ScheduleControler sc = new ScheduleControler();
-            sc.Dock = DockStyle.Fill;
-            this.navigationDrawer1.ContentViewContainer.Controls.Add(sc);
-            this.navigationDrawer1.ToggleDrawer();
+            navigationDrawer1.ContentViewContainer.Controls.Clear();
+            var sc = new ScheduleControler {Dock = DockStyle.Fill};
+            navigationDrawer1.ContentViewContainer.Controls.Add(sc);
+            navigationDrawer1.ToggleDrawer();
         }
 
         private void drawerMenuItemLock_Click(object sender, EventArgs e)
         {
-            this.navigationDrawer1.ContentViewContainer.Controls.Clear();
+            navigationDrawer1.ContentViewContainer.Controls.Clear();
             LockForm lc = new LockForm();
             lc.ShowDialog(this);
         }
 
         private void drawerMenuItemEmails_Click(object sender, EventArgs e)
         {
-            this.navigationDrawer1.ContentViewContainer.Controls.Clear();
-            EmailControl ec = new EmailControl();
-            ec.Dock = DockStyle.Fill;
-            this.navigationDrawer1.ContentViewContainer.Controls.Add(ec);
-            this.navigationDrawer1.ToggleDrawer();
+            navigationDrawer1.ContentViewContainer.Controls.Clear();
+            EmailControl ec = new EmailControl {Dock = DockStyle.Fill};
+            navigationDrawer1.ContentViewContainer.Controls.Add(ec);
+            navigationDrawer1.ToggleDrawer();
         }
 
         private void drawerMenuItemLogout_Click(object sender, EventArgs e)
         {
-            this.navigationDrawer1.ContentViewContainer.Controls.Clear();
-            PrescriptionControl pc = new PrescriptionControl();
-            pc.Width = this.Width;
-            this.navigationDrawer1.ContentViewContainer.AutoScroll = true;
-            this.navigationDrawer1.ContentViewContainer.Controls.Add(pc);
-            this.navigationDrawer1.ToggleDrawer();
+           //Give an warning then logout
         }
 
         private void drawerMenuItemPatient_Click(object sender, EventArgs e)
         {
-            this.navigationDrawer1.ContentViewContainer.Controls.Clear();
-            PatientControl pc = new PatientControl();
-            pc.Dock = DockStyle.Fill;
-            this.navigationDrawer1.ContentViewContainer.Controls.Add(pc);
-            this.navigationDrawer1.ToggleDrawer();
+            navigationDrawer1.ContentViewContainer.Controls.Clear();
+            PatientControl pc = new PatientControl(navigationDrawer1) {Dock = DockStyle.Fill};
+            navigationDrawer1.ContentViewContainer.Controls.Add(pc);
+            navigationDrawer1.ToggleDrawer();
         }
     }
 }

@@ -8,26 +8,38 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PrivateDoctorSolution.Forms;
+using Syncfusion.Windows.Forms.Tools;
 
 namespace PrivateDoctorSolution.Controls.Prescription
 {
     public partial class PrescriptionControl : UserControl
     {
-        public PrescriptionControl()
+        private NavigationDrawer NavigationDrawer { get; set; }
+
+        public PrescriptionControl(NavigationDrawer navigationDrawer, int id)
         {
             InitializeComponent();
+            NavigationDrawer = navigationDrawer;
+         
         }
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            AddPrescription AP = new AddPrescription("Prescription");
-            AP.ShowDialog(this);
+            AddPrescription ap = new AddPrescription("Prescription");
+            ap.ShowDialog(this);
         }
 
         private void buttonAdv2_Click(object sender, EventArgs e)
         {
-            AddPrescription AP = new AddPrescription("Test");
-            AP.ShowDialog(this);
+            AddPrescription ap = new AddPrescription("Test");
+            ap.ShowDialog(this);
+        }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            NavigationDrawer.ContentViewContainer.Controls.Clear();
+            PatientControl pc = new PatientControl(NavigationDrawer) { Dock = DockStyle.Fill };
+            NavigationDrawer.ContentViewContainer.Controls.Add(pc);
         }
     }
 }

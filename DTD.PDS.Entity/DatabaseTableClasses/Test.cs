@@ -12,7 +12,7 @@ namespace DTD.PDS.Entity.DatabaseTableClasses
     {
         [Key]
         public int Id { get; set; }
-        public int PatientId { get; set; }
+        public int PrescriptionId { get; set; }
         public string TestName { get; set; }
         public Status Status { get; set; }
         public DateTime IssueDate { get; set; }
