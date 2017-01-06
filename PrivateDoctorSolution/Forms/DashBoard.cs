@@ -16,7 +16,7 @@ namespace PrivateDoctorSolution
             InitializeComponent();
             SettingUpNevDrawer();
             LoadSchedule();
-
+            
         }
 
         private void SettingUpNevDrawer()
@@ -26,7 +26,7 @@ namespace PrivateDoctorSolution
 
             navigationDrawer1.DrawerPanelContainer.BorderStyle = BorderStyle.None;
             navigationDrawer1.DrawerPanelContainer.Padding = new Padding(0, 0, 3, 0);
-            navigationDrawer1.TouchThreshold = 3000;
+            navigationDrawer1.TouchThreshold = 0;
 
             navigationDrawer1.DrawerPanelContainer.BorderStyle = BorderStyle.None;
             navigationDrawer1.DrawerPanelContainer.Paint += DrawerPanelContainer_Paint;
@@ -96,15 +96,9 @@ namespace PrivateDoctorSolution
             navigationDrawer1.ContentViewContainer.Controls.Clear();
             ProfileControl pc = new ProfileControl() { Dock = DockStyle.Fill };
             navigationDrawer1.ContentViewContainer.Controls.Add(pc);
-            navigationDrawer1.ToggleDrawer();
+          
         }
 
-        private void drawerHeader1_Click(object sender, EventArgs e)
-        {
-            navigationDrawer1.ContentViewContainer.Controls.Clear();
-            ProfileControl pc = new ProfileControl() { Dock = DockStyle.Fill };
-            navigationDrawer1.ContentViewContainer.Controls.Add(pc);
-            navigationDrawer1.ToggleDrawer();
-        }
+       
     }
 }
