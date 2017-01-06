@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using PrivateDoctorSolution.Controls;
 using PrivateDoctorSolution.Controls.Mail;
 using Syncfusion.Windows.Forms;
+using PrivateDoctorSolution.Controls.Prescription;
 
 namespace PrivateDoctorSolution
 {
@@ -74,6 +75,10 @@ namespace PrivateDoctorSolution
         private void drawerMenuItemLogout_Click(object sender, EventArgs e)
         {
             this.navigationDrawer1.ContentViewContainer.Controls.Clear();
+            PrescriptionControl pc = new PrescriptionControl();
+            pc.Width = this.Width;
+            this.navigationDrawer1.ContentViewContainer.AutoScroll = true;
+            this.navigationDrawer1.ContentViewContainer.Controls.Add(pc);
             this.navigationDrawer1.ToggleDrawer();
         }
 

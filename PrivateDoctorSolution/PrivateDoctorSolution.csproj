@@ -116,17 +116,41 @@
     <Compile Include="Controls\Mail\InboxMailControl.designer.cs">
       <DependentUpon>InboxMailControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Prescription\MedicineControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Prescription\MedicineControl.designer.cs">
+      <DependentUpon>MedicineControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\PatientControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controls\PatientControl.designer.cs">
       <DependentUpon>PatientControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Prescription\PrescriptionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Prescription\PrescriptionControl.Designer.cs">
+      <DependentUpon>PrescriptionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Prescription\TestControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Prescription\TestControl.Designer.cs">
+      <DependentUpon>TestControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AddPatientForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\AddPatientForm.Designer.cs">
       <DependentUpon>AddPatientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddPrescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddPrescription.designer.cs">
+      <DependentUpon>AddPrescription.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\DashBoard.cs">
       <SubType>Form</SubType>
@@ -155,11 +179,23 @@
     <EmbeddedResource Include="Controls\Mail\InboxMailControl.resx">
       <DependentUpon>InboxMailControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Prescription\MedicineControl.resx">
+      <DependentUpon>MedicineControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\PatientControl.resx">
       <DependentUpon>PatientControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Prescription\PrescriptionControl.resx">
+      <DependentUpon>PrescriptionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Prescription\TestControl.resx">
+      <DependentUpon>TestControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddPatientForm.resx">
       <DependentUpon>AddPatientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddPrescription.resx">
+      <DependentUpon>AddPrescription.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
@@ -249,6 +285,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add-mini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Previous.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
