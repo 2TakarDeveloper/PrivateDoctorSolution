@@ -41,10 +41,16 @@
             this.BackButton = new Syncfusion.Windows.Forms.ButtonAdv();
             this.flowLayoutPanelTest = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanelPrescription = new System.Windows.Forms.FlowLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboDropDown1 = new Syncfusion.Windows.Forms.Tools.ComboDropDown();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.comboDropDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -52,6 +58,7 @@
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(150)))), ((int)(((byte)(9)))));
             this.flowLayoutPanel1.Controls.Add(this.AddButton);
             this.flowLayoutPanel1.Controls.Add(this.buttonAdv1);
+            this.flowLayoutPanel1.Controls.Add(this.label4);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 53);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -130,6 +137,7 @@
             this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(150)))), ((int)(((byte)(9)))));
             this.flowLayoutPanel2.Controls.Add(this.buttonAdv2);
             this.flowLayoutPanel2.Controls.Add(this.buttonAdv3);
+            this.flowLayoutPanel2.Controls.Add(this.label5);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 528);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
@@ -184,6 +192,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(73)))), ((int)(((byte)(164)))));
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.comboDropDown1);
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.BackButton);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -198,11 +209,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.label1.Location = new System.Drawing.Point(315, 3);
+            this.label1.Location = new System.Drawing.Point(247, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 21);
+            this.label1.Size = new System.Drawing.Size(110, 21);
             this.label1.TabIndex = 10;
-            this.label1.Text = "Prescription";
+            this.label1.Text = "Prescription :";
             // 
             // BackButton
             // 
@@ -241,6 +252,68 @@
             this.flowLayoutPanelPrescription.Size = new System.Drawing.Size(794, 419);
             this.flowLayoutPanelPrescription.TabIndex = 4;
             // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.label2.Location = new System.Drawing.Point(354, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(36, 21);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "#ID";
+            // 
+            // comboDropDown1
+            // 
+            this.comboDropDown1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(73)))), ((int)(((byte)(164)))));
+            this.comboDropDown1.BeforeTouchSize = new System.Drawing.Size(162, 21);
+            this.comboDropDown1.Border3DStyle = System.Windows.Forms.Border3DStyle.Flat;
+            this.comboDropDown1.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(73)))), ((int)(((byte)(164)))));
+            this.comboDropDown1.Location = new System.Drawing.Point(455, 13);
+            this.comboDropDown1.MetroBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.comboDropDown1.Name = "comboDropDown1";
+            this.comboDropDown1.Size = new System.Drawing.Size(162, 21);
+            this.comboDropDown1.TabIndex = 12;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.label3.Location = new System.Drawing.Point(673, 13);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(118, 21);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "DD/MM/YYYY";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.label4.Location = new System.Drawing.Point(292, 11);
+            this.label4.Margin = new System.Windows.Forms.Padding(100, 0, 3, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(81, 21);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Medicine";
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.label5.Location = new System.Drawing.Point(292, 11);
+            this.label5.Margin = new System.Windows.Forms.Padding(100, 0, 3, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(47, 21);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Tests";
+            // 
             // PrescriptionControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -249,10 +322,13 @@
             this.Name = "PrescriptionControl";
             this.Size = new System.Drawing.Size(800, 1000);
             this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
+            this.flowLayoutPanel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.comboDropDown1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -271,5 +347,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelTest;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelPrescription;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label3;
+        private Syncfusion.Windows.Forms.Tools.ComboDropDown comboDropDown1;
+        private System.Windows.Forms.Label label2;
     }
 }

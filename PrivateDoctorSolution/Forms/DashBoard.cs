@@ -15,7 +15,8 @@ namespace PrivateDoctorSolution
         {
             InitializeComponent();
             SettingUpNevDrawer();
-          
+            LoadSchedule();
+
         }
 
         private void SettingUpNevDrawer()
@@ -25,7 +26,7 @@ namespace PrivateDoctorSolution
 
             navigationDrawer1.DrawerPanelContainer.BorderStyle = BorderStyle.None;
             navigationDrawer1.DrawerPanelContainer.Padding = new Padding(0, 0, 3, 0);
-            navigationDrawer1.TouchThreshold = 500;
+            navigationDrawer1.TouchThreshold = 3000;
 
             navigationDrawer1.DrawerPanelContainer.BorderStyle = BorderStyle.None;
             navigationDrawer1.DrawerPanelContainer.Paint += DrawerPanelContainer_Paint;
@@ -52,12 +53,15 @@ namespace PrivateDoctorSolution
 
         private void drawerMenuItemSchedule_Click(object sender, EventArgs e)
         {
+            LoadSchedule();
+        }
+        private void LoadSchedule()
+        {
             navigationDrawer1.ContentViewContainer.Controls.Clear();
-            var sc = new ScheduleControler {Dock = DockStyle.Fill};
+            var sc = new ScheduleControler { Dock = DockStyle.Fill };
             navigationDrawer1.ContentViewContainer.Controls.Add(sc);
             navigationDrawer1.ToggleDrawer();
         }
-
         private void drawerMenuItemLock_Click(object sender, EventArgs e)
         {
             navigationDrawer1.ContentViewContainer.Controls.Clear();
@@ -82,6 +86,23 @@ namespace PrivateDoctorSolution
         {
             navigationDrawer1.ContentViewContainer.Controls.Clear();
             PatientControl pc = new PatientControl(navigationDrawer1) {Dock = DockStyle.Fill};
+            navigationDrawer1.ContentViewContainer.Controls.Add(pc);
+            navigationDrawer1.ToggleDrawer();
+            
+        }
+
+        private void drawerHeaderProfile_Click(object sender, EventArgs e)
+        {
+            navigationDrawer1.ContentViewContainer.Controls.Clear();
+            ProfileControl pc = new ProfileControl() { Dock = DockStyle.Fill };
+            navigationDrawer1.ContentViewContainer.Controls.Add(pc);
+            navigationDrawer1.ToggleDrawer();
+        }
+
+        private void drawerHeader1_Click(object sender, EventArgs e)
+        {
+            navigationDrawer1.ContentViewContainer.Controls.Clear();
+            ProfileControl pc = new ProfileControl() { Dock = DockStyle.Fill };
             navigationDrawer1.ContentViewContainer.Controls.Add(pc);
             navigationDrawer1.ToggleDrawer();
         }

@@ -34,8 +34,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.buttonAdv2 = new Syncfusion.Windows.Forms.ButtonAdv();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.buttonAdv1 = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBoxAdv1 = new Syncfusion.Windows.Forms.Tools.ComboBoxAdv();
             this.tableLayoutPanel1.SuspendLayout();
@@ -64,7 +64,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 68F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 42F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 44F));
             this.tableLayoutPanel1.Controls.Add(this.label3, 5, 0);
             this.tableLayoutPanel1.Controls.Add(this.buttonAdv2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label1, 1, 0);
@@ -123,15 +123,6 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Name :";
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(617, 10);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(155, 22);
-            this.dateTimePicker1.TabIndex = 15;
-            // 
             // buttonAdv1
             // 
             this.buttonAdv1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
@@ -150,6 +141,15 @@
             this.buttonAdv1.Size = new System.Drawing.Size(44, 40);
             this.buttonAdv1.TabIndex = 12;
             this.buttonAdv1.UseVisualStyle = true;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(617, 10);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(155, 22);
+            this.dateTimePicker1.TabIndex = 15;
             // 
             // textBox1
             // 

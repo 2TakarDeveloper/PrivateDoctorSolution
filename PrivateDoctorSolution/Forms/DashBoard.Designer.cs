@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.navigationDrawer1 = new Syncfusion.Windows.Forms.Tools.NavigationDrawer();
-            this.drawerHeaderProfile = new Syncfusion.Windows.Forms.Tools.DrawerHeader();
             this.drawerMenuItemSchedule = new Syncfusion.Windows.Forms.Tools.DrawerMenuItem();
             this.drawerMenuItemPatient = new Syncfusion.Windows.Forms.Tools.DrawerMenuItem();
             this.drawerMenuItemEmails = new Syncfusion.Windows.Forms.Tools.DrawerMenuItem();
             this.drawerMenuItemLock = new Syncfusion.Windows.Forms.Tools.DrawerMenuItem();
             this.drawerMenuItemLogout = new Syncfusion.Windows.Forms.Tools.DrawerMenuItem();
             this.MenuBar = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.drawerHeaderProfile = new Syncfusion.Windows.Forms.Tools.DrawerHeader();
             this.SuspendLayout();
             // 
             // navigationDrawer1
@@ -58,22 +58,6 @@
             this.navigationDrawer1.Text = "navigationDrawer1";
             this.navigationDrawer1.TouchThreshold = 500;
             this.navigationDrawer1.Transition = Syncfusion.Windows.Forms.Tools.Transition.Push;
-            // 
-            // drawerHeaderProfile
-            // 
-            this.drawerHeaderProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(73)))), ((int)(((byte)(164)))));
-            this.drawerHeaderProfile.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.drawerHeaderProfile.HeaderImage = global::PrivateDoctorSolution.Properties.Resources.imageListAdv1_Images;
-            this.drawerHeaderProfile.HeaderText = "drawerHeaderProfile";
-            this.drawerHeaderProfile.Location = new System.Drawing.Point(2, 0);
-            this.drawerHeaderProfile.Margin = new System.Windows.Forms.Padding(0);
-            this.drawerHeaderProfile.MinimumSize = new System.Drawing.Size(200, 50);
-            this.drawerHeaderProfile.Name = "drawerHeaderProfile";
-            this.drawerHeaderProfile.Size = new System.Drawing.Size(200, 120);
-            this.drawerHeaderProfile.TabIndex = 5;
-            this.drawerHeaderProfile.Text = "Mr.Doctor";
-            this.drawerHeaderProfile.TextAlign = Syncfusion.Windows.Forms.Tools.TextAlignment.Right;
-            this.drawerHeaderProfile.TextColor = System.Drawing.Color.White;
             // 
             // drawerMenuItemSchedule
             // 
@@ -189,6 +173,24 @@
             this.MenuBar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.MenuBar.UseVisualStyle = true;
             this.MenuBar.Click += new System.EventHandler(this.Menu_Click);
+            // 
+            // drawerHeaderProfile
+            // 
+            this.drawerHeaderProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(73)))), ((int)(((byte)(164)))));
+            this.drawerHeaderProfile.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.drawerHeaderProfile.HeaderImage = global::PrivateDoctorSolution.Properties.Resources.imageListAdv1_Images;
+            this.drawerHeaderProfile.HeaderText = "Something";
+            this.drawerHeaderProfile.Location = new System.Drawing.Point(2, 0);
+            this.drawerHeaderProfile.Margin = new System.Windows.Forms.Padding(0);
+            this.drawerHeaderProfile.MinimumSize = new System.Drawing.Size(200, 50);
+            this.drawerHeaderProfile.Name = "drawerHeaderProfile";
+            this.drawerHeaderProfile.SelectionColor = System.Drawing.Color.Maroon;
+            this.drawerHeaderProfile.Size = new System.Drawing.Size(200, 120);
+            this.drawerHeaderProfile.TabIndex = 5;
+            this.drawerHeaderProfile.Text = "Mr.Doctor";
+            this.drawerHeaderProfile.TextAlign = Syncfusion.Windows.Forms.Tools.TextAlignment.Right;
+            this.drawerHeaderProfile.TextColor = System.Drawing.Color.White;
+            this.drawerHeaderProfile.Click += new System.EventHandler(this.drawerHeaderProfile_Click);
             // 
             // DashBoard
             // 
