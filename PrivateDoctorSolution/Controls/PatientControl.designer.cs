@@ -36,6 +36,7 @@
             this.DeletetButton = new Syncfusion.Windows.Forms.ButtonAdv();
             this.SearchBox = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
             this.PatientDataGrid = new System.Windows.Forms.DataGridView();
+            this.buttonAdv1 = new Syncfusion.Windows.Forms.ButtonAdv();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SearchBox)).BeginInit();
@@ -65,6 +66,7 @@
             this.flowLayoutPanel1.Controls.Add(this.AddButton);
             this.flowLayoutPanel1.Controls.Add(this.EditButton);
             this.flowLayoutPanel1.Controls.Add(this.DeletetButton);
+            this.flowLayoutPanel1.Controls.Add(this.buttonAdv1);
             this.flowLayoutPanel1.Controls.Add(this.SearchBox);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
@@ -100,7 +102,7 @@
             this.EditButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.EditButton.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
             this.EditButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.EditButton.BeforeTouchSize = new System.Drawing.Size(99, 37);
+            this.EditButton.BeforeTouchSize = new System.Drawing.Size(75, 37);
             this.EditButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.EditButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.EditButton.Image = global::PrivateDoctorSolution.Properties.Resources.File_Edit_WF;
@@ -111,7 +113,7 @@
             this.EditButton.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
             this.EditButton.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(150)))), ((int)(((byte)(9)))));
             this.EditButton.Name = "EditButton";
-            this.EditButton.Size = new System.Drawing.Size(99, 37);
+            this.EditButton.Size = new System.Drawing.Size(75, 37);
             this.EditButton.TabIndex = 9;
             this.EditButton.Text = "Edit";
             this.EditButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -130,7 +132,7 @@
             this.DeletetButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.DeletetButton.IsBackStageButton = false;
             this.DeletetButton.KeepFocusRectangle = false;
-            this.DeletetButton.Location = new System.Drawing.Point(202, 3);
+            this.DeletetButton.Location = new System.Drawing.Point(178, 3);
             this.DeletetButton.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
             this.DeletetButton.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(150)))), ((int)(((byte)(9)))));
             this.DeletetButton.Name = "DeletetButton";
@@ -151,7 +153,7 @@
             this.SearchBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.SearchBox.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(150)))), ((int)(((byte)(9)))));
             this.SearchBox.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SearchBox.Location = new System.Drawing.Point(306, 8);
+            this.SearchBox.Location = new System.Drawing.Point(430, 8);
             this.SearchBox.Margin = new System.Windows.Forms.Padding(3, 8, 10, 3);
             this.SearchBox.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(150)))), ((int)(((byte)(9)))));
             this.SearchBox.Name = "SearchBox";
@@ -170,6 +172,28 @@
             this.PatientDataGrid.Name = "PatientDataGrid";
             this.PatientDataGrid.Size = new System.Drawing.Size(810, 411);
             this.PatientDataGrid.TabIndex = 2;
+            // 
+            // buttonAdv1
+            // 
+            this.buttonAdv1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonAdv1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
+            this.buttonAdv1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.buttonAdv1.BeforeTouchSize = new System.Drawing.Size(135, 37);
+            this.buttonAdv1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.buttonAdv1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.buttonAdv1.Image = global::PrivateDoctorSolution.Properties.Resources.File_Edit_WF;
+            this.buttonAdv1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonAdv1.IsBackStageButton = false;
+            this.buttonAdv1.KeepFocusRectangle = false;
+            this.buttonAdv1.Location = new System.Drawing.Point(282, 3);
+            this.buttonAdv1.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
+            this.buttonAdv1.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(150)))), ((int)(((byte)(9)))));
+            this.buttonAdv1.Name = "buttonAdv1";
+            this.buttonAdv1.Size = new System.Drawing.Size(135, 37);
+            this.buttonAdv1.TabIndex = 11;
+            this.buttonAdv1.Text = "Prescription";
+            this.buttonAdv1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonAdv1.UseVisualStyle = true;
             // 
             // PatientControl
             // 
@@ -197,5 +221,6 @@
         private Syncfusion.Windows.Forms.ButtonAdv DeletetButton;
         private Syncfusion.Windows.Forms.Tools.TextBoxExt SearchBox;
         private System.Windows.Forms.DataGridView PatientDataGrid;
+        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv1;
     }
 }
