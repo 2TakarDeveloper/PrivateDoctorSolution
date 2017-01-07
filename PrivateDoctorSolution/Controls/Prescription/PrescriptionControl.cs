@@ -185,5 +185,10 @@ namespace PrivateDoctorSolution.Controls.Prescription
 
 
         }
+
+        private void PrintButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -215,6 +215,7 @@
             this.PrintButton.Text = "Print";
             this.PrintButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.PrintButton.UseVisualStyle = true;
+            this.PrintButton.Click += new System.EventHandler(this.PrintButton_Click);
             // 
             // SaveButton
             // 
