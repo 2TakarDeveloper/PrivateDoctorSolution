@@ -45,7 +45,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(287, 10);
+            this.label2.Location = new System.Drawing.Point(253, 10);
             this.label2.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 20);
@@ -56,14 +56,14 @@
             // 
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.tableLayoutPanel1.ColumnCount = 8;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 58F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 68F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 44F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.882353F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.823529F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.52941F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.529412F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.58824F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.823529F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.76471F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8F));
             this.tableLayoutPanel1.Controls.Add(this.label3, 5, 0);
             this.tableLayoutPanel1.Controls.Add(this.label1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 3, 0);
@@ -84,7 +84,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(549, 10);
+            this.label3.Location = new System.Drawing.Point(489, 10);
             this.label3.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 20);
@@ -95,10 +95,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(40, 10);
+            this.label1.Location = new System.Drawing.Point(15, 10);
             this.label1.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 20);
+            this.label1.Size = new System.Drawing.Size(54, 30);
             this.label1.TabIndex = 13;
             this.label1.Text = "Name :";
             // 
@@ -106,18 +106,18 @@
             // 
             this.buttonAdv1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
             this.buttonAdv1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.buttonAdv1.BeforeTouchSize = new System.Drawing.Size(44, 40);
+            this.buttonAdv1.BeforeTouchSize = new System.Drawing.Size(71, 40);
             this.buttonAdv1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonAdv1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.buttonAdv1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.buttonAdv1.Image = global::PrivateDoctorSolution.Properties.Resources.Trash_can___03;
             this.buttonAdv1.IsBackStageButton = false;
             this.buttonAdv1.KeepFocusRectangle = false;
-            this.buttonAdv1.Location = new System.Drawing.Point(806, 0);
+            this.buttonAdv1.Location = new System.Drawing.Point(779, 0);
             this.buttonAdv1.Margin = new System.Windows.Forms.Padding(0);
             this.buttonAdv1.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.buttonAdv1.Name = "buttonAdv1";
-            this.buttonAdv1.Size = new System.Drawing.Size(44, 40);
+            this.buttonAdv1.Size = new System.Drawing.Size(71, 40);
             this.buttonAdv1.TabIndex = 12;
             this.buttonAdv1.UseVisualStyle = true;
             this.buttonAdv1.Click += new System.EventHandler(this.buttonAdv1_Click);
@@ -125,19 +125,19 @@
             // IssueDate
             // 
             this.IssueDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IssueDate.Location = new System.Drawing.Point(617, 10);
+            this.IssueDate.Location = new System.Drawing.Point(546, 10);
             this.IssueDate.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.IssueDate.Name = "IssueDate";
-            this.IssueDate.Size = new System.Drawing.Size(155, 22);
+            this.IssueDate.Size = new System.Drawing.Size(233, 22);
             this.IssueDate.TabIndex = 15;
             // 
             // NameTextBox
             // 
             this.NameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.NameTextBox.Location = new System.Drawing.Point(98, 10);
+            this.NameTextBox.Location = new System.Drawing.Point(72, 10);
             this.NameTextBox.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.NameTextBox.Name = "NameTextBox";
-            this.NameTextBox.Size = new System.Drawing.Size(155, 22);
+            this.NameTextBox.Size = new System.Drawing.Size(181, 22);
             this.NameTextBox.TabIndex = 18;
             // 
             // StatusComboBox
@@ -149,7 +149,7 @@
             "Pending",
             "Complete",
             "Redo"});
-            this.StatusComboBox.Location = new System.Drawing.Point(360, 10);
+            this.StatusComboBox.Location = new System.Drawing.Point(316, 10);
             this.StatusComboBox.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.StatusComboBox.Name = "StatusComboBox";
             this.StatusComboBox.Size = new System.Drawing.Size(163, 24);

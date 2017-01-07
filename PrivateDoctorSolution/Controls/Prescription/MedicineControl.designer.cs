@@ -44,38 +44,38 @@
             // 
             // NameBox
             // 
-            this.NameBox.BeforeTouchSize = new System.Drawing.Size(130, 24);
+            this.NameBox.BeforeTouchSize = new System.Drawing.Size(148, 24);
             this.NameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.NameBox.Location = new System.Drawing.Point(40, 10);
+            this.NameBox.Location = new System.Drawing.Point(10, 10);
             this.NameBox.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.NameBox.Name = "NameBox";
-            this.NameBox.Size = new System.Drawing.Size(130, 24);
+            this.NameBox.Size = new System.Drawing.Size(148, 24);
             this.NameBox.TabIndex = 20;
             this.NameBox.Text = "Medicine Name";
             // 
             // EndDate
             // 
             this.EndDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.EndDate.Location = new System.Drawing.Point(514, 10);
+            this.EndDate.Location = new System.Drawing.Point(560, 10);
             this.EndDate.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.EndDate.Name = "EndDate";
-            this.EndDate.Size = new System.Drawing.Size(171, 22);
+            this.EndDate.Size = new System.Drawing.Size(235, 22);
             this.EndDate.TabIndex = 16;
             // 
             // IntervalTextBox
             // 
             this.IntervalTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.IntervalTextBox.Location = new System.Drawing.Point(759, 10);
+            this.IntervalTextBox.Location = new System.Drawing.Point(880, 10);
             this.IntervalTextBox.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.IntervalTextBox.Name = "IntervalTextBox";
-            this.IntervalTextBox.Size = new System.Drawing.Size(171, 22);
+            this.IntervalTextBox.Size = new System.Drawing.Size(161, 22);
             this.IntervalTextBox.TabIndex = 18;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(170, 10);
+            this.label1.Location = new System.Drawing.Point(158, 10);
             this.label1.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(85, 20);
@@ -85,17 +85,17 @@
             // StartDate
             // 
             this.StartDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StartDate.Location = new System.Drawing.Point(260, 10);
+            this.StartDate.Location = new System.Drawing.Point(244, 10);
             this.StartDate.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.StartDate.Name = "StartDate";
-            this.StartDate.Size = new System.Drawing.Size(171, 22);
+            this.StartDate.Size = new System.Drawing.Size(237, 22);
             this.StartDate.TabIndex = 15;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(431, 10);
+            this.label2.Location = new System.Drawing.Point(481, 10);
             this.label2.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 20);
@@ -106,7 +106,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(685, 10);
+            this.label3.Location = new System.Drawing.Point(795, 10);
             this.label3.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 20);
@@ -117,18 +117,18 @@
             // 
             this.buttonAdv1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
             this.buttonAdv1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.buttonAdv1.BeforeTouchSize = new System.Drawing.Size(50, 40);
+            this.buttonAdv1.BeforeTouchSize = new System.Drawing.Size(80, 40);
             this.buttonAdv1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonAdv1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.buttonAdv1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.buttonAdv1.Image = global::PrivateDoctorSolution.Properties.Resources.Trash_can___03;
             this.buttonAdv1.IsBackStageButton = false;
             this.buttonAdv1.KeepFocusRectangle = false;
-            this.buttonAdv1.Location = new System.Drawing.Point(930, 0);
+            this.buttonAdv1.Location = new System.Drawing.Point(1070, 0);
             this.buttonAdv1.Margin = new System.Windows.Forms.Padding(0);
             this.buttonAdv1.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.buttonAdv1.Name = "buttonAdv1";
-            this.buttonAdv1.Size = new System.Drawing.Size(50, 40);
+            this.buttonAdv1.Size = new System.Drawing.Size(80, 40);
             this.buttonAdv1.TabIndex = 12;
             this.buttonAdv1.UseVisualStyle = true;
             this.buttonAdv1.Click += new System.EventHandler(this.buttonAdv1_Click);
@@ -137,30 +137,30 @@
             // 
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.tableLayoutPanel1.ColumnCount = 9;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 83F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 74F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.9565217F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.04348F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.565217F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.86957F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.956522F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.69565F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.478261F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.69565F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.782609F));
             this.tableLayoutPanel1.Controls.Add(this.buttonAdv1, 8, 0);
             this.tableLayoutPanel1.Controls.Add(this.label3, 6, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 4, 0);
             this.tableLayoutPanel1.Controls.Add(this.StartDate, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.label1, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.IntervalTextBox, 7, 0);
-            this.tableLayoutPanel1.Controls.Add(this.EndDate, 5, 0);
             this.tableLayoutPanel1.Controls.Add(this.NameBox, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.EndDate, 5, 0);
+            this.tableLayoutPanel1.Controls.Add(this.IntervalTextBox, 7, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(980, 40);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1150, 40);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // MedicineControl
@@ -169,7 +169,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "MedicineControl";
-            this.Size = new System.Drawing.Size(980, 40);
+            this.Size = new System.Drawing.Size(1150, 40);
             ((System.ComponentModel.ISupportInitialize)(this.NameBox)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
