@@ -37,17 +37,15 @@
             this.AddButtonTest = new Syncfusion.Windows.Forms.ButtonAdv();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.PrescriptionID = new System.Windows.Forms.ComboBox();
+            this.PrintButton = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.SaveButton = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.NewButton = new Syncfusion.Windows.Forms.ButtonAdv();
             this.DateTime = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.BackButton = new Syncfusion.Windows.Forms.ButtonAdv();
             this.TestPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.MedicinePanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.buttonAdv1 = new Syncfusion.Windows.Forms.ButtonAdv();
-            this.buttonAdv2 = new Syncfusion.Windows.Forms.ButtonAdv();
-            this.buttonAdv3 = new Syncfusion.Windows.Forms.ButtonAdv();
-            this.buttonAdv4 = new Syncfusion.Windows.Forms.ButtonAdv();
-            this.buttonAdv5 = new Syncfusion.Windows.Forms.ButtonAdv();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -58,7 +56,6 @@
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(150)))), ((int)(((byte)(9)))));
             this.flowLayoutPanel1.Controls.Add(this.AddButtonMedicine);
-            this.flowLayoutPanel1.Controls.Add(this.buttonAdv2);
             this.flowLayoutPanel1.Controls.Add(this.label4);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 53);
@@ -95,7 +92,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.label4.Location = new System.Drawing.Point(478, 11);
+            this.label4.Location = new System.Drawing.Point(387, 11);
             this.label4.Margin = new System.Windows.Forms.Padding(300, 0, 3, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 21);
@@ -128,7 +125,6 @@
             // 
             this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(150)))), ((int)(((byte)(9)))));
             this.flowLayoutPanel2.Controls.Add(this.AddButtonTest);
-            this.flowLayoutPanel2.Controls.Add(this.buttonAdv3);
             this.flowLayoutPanel2.Controls.Add(this.label5);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 528);
@@ -165,7 +161,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.label5.Location = new System.Drawing.Point(478, 11);
+            this.label5.Location = new System.Drawing.Point(387, 11);
             this.label5.Margin = new System.Windows.Forms.Padding(300, 0, 3, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(47, 21);
@@ -175,10 +171,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(73)))), ((int)(((byte)(164)))));
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.buttonAdv5);
-            this.panel1.Controls.Add(this.buttonAdv4);
-            this.panel1.Controls.Add(this.buttonAdv1);
+            this.panel1.Controls.Add(this.PrescriptionID);
+            this.panel1.Controls.Add(this.PrintButton);
+            this.panel1.Controls.Add(this.SaveButton);
+            this.panel1.Controls.Add(this.NewButton);
             this.panel1.Controls.Add(this.DateTime);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.BackButton);
@@ -187,6 +183,82 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(794, 44);
             this.panel1.TabIndex = 3;
+            // 
+            // PrescriptionID
+            // 
+            this.PrescriptionID.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PrescriptionID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.PrescriptionID.FormattingEnabled = true;
+            this.PrescriptionID.Location = new System.Drawing.Point(380, 7);
+            this.PrescriptionID.Name = "PrescriptionID";
+            this.PrescriptionID.Size = new System.Drawing.Size(170, 29);
+            this.PrescriptionID.TabIndex = 17;
+            this.PrescriptionID.SelectedIndexChanged += new System.EventHandler(this.PrescriptionID_SelectedIndexChanged);
+            // 
+            // PrintButton
+            // 
+            this.PrintButton.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
+            this.PrintButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.PrintButton.BeforeTouchSize = new System.Drawing.Size(54, 44);
+            this.PrintButton.Dock = System.Windows.Forms.DockStyle.Left;
+            this.PrintButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.PrintButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.PrintButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.PrintButton.IsBackStageButton = false;
+            this.PrintButton.KeepFocusRectangle = false;
+            this.PrintButton.Location = new System.Drawing.Point(201, 0);
+            this.PrintButton.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
+            this.PrintButton.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(73)))), ((int)(((byte)(164)))));
+            this.PrintButton.Name = "PrintButton";
+            this.PrintButton.Size = new System.Drawing.Size(54, 44);
+            this.PrintButton.TabIndex = 16;
+            this.PrintButton.Text = "Print";
+            this.PrintButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.PrintButton.UseVisualStyle = true;
+            // 
+            // SaveButton
+            // 
+            this.SaveButton.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
+            this.SaveButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.SaveButton.BeforeTouchSize = new System.Drawing.Size(54, 44);
+            this.SaveButton.Dock = System.Windows.Forms.DockStyle.Left;
+            this.SaveButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.SaveButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.SaveButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SaveButton.IsBackStageButton = false;
+            this.SaveButton.KeepFocusRectangle = false;
+            this.SaveButton.Location = new System.Drawing.Point(147, 0);
+            this.SaveButton.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
+            this.SaveButton.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(73)))), ((int)(((byte)(164)))));
+            this.SaveButton.Name = "SaveButton";
+            this.SaveButton.Size = new System.Drawing.Size(54, 44);
+            this.SaveButton.TabIndex = 15;
+            this.SaveButton.Text = "Save";
+            this.SaveButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.SaveButton.UseVisualStyle = true;
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
+            // 
+            // NewButton
+            // 
+            this.NewButton.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
+            this.NewButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.NewButton.BeforeTouchSize = new System.Drawing.Size(63, 44);
+            this.NewButton.Dock = System.Windows.Forms.DockStyle.Left;
+            this.NewButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.NewButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.NewButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.NewButton.IsBackStageButton = false;
+            this.NewButton.KeepFocusRectangle = false;
+            this.NewButton.Location = new System.Drawing.Point(84, 0);
+            this.NewButton.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
+            this.NewButton.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(73)))), ((int)(((byte)(164)))));
+            this.NewButton.Name = "NewButton";
+            this.NewButton.Size = new System.Drawing.Size(63, 44);
+            this.NewButton.TabIndex = 14;
+            this.NewButton.Text = "New";
+            this.NewButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.NewButton.UseVisualStyle = true;
+            this.NewButton.Click += new System.EventHandler(this.NewButton_Click);
             // 
             // DateTime
             // 
@@ -251,123 +323,6 @@
             this.MedicinePanel.Size = new System.Drawing.Size(794, 419);
             this.MedicinePanel.TabIndex = 4;
             // 
-            // buttonAdv1
-            // 
-            this.buttonAdv1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
-            this.buttonAdv1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.buttonAdv1.BeforeTouchSize = new System.Drawing.Size(63, 44);
-            this.buttonAdv1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.buttonAdv1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.buttonAdv1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.buttonAdv1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAdv1.IsBackStageButton = false;
-            this.buttonAdv1.KeepFocusRectangle = false;
-            this.buttonAdv1.Location = new System.Drawing.Point(84, 0);
-            this.buttonAdv1.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
-            this.buttonAdv1.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(73)))), ((int)(((byte)(164)))));
-            this.buttonAdv1.Name = "buttonAdv1";
-            this.buttonAdv1.Size = new System.Drawing.Size(63, 44);
-            this.buttonAdv1.TabIndex = 14;
-            this.buttonAdv1.Text = "New";
-            this.buttonAdv1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonAdv1.UseVisualStyle = true;
-            // 
-            // buttonAdv2
-            // 
-            this.buttonAdv2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonAdv2.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
-            this.buttonAdv2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.buttonAdv2.BeforeTouchSize = new System.Drawing.Size(78, 37);
-            this.buttonAdv2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.buttonAdv2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.buttonAdv2.Image = global::PrivateDoctorSolution.Properties.Resources.Addbtn;
-            this.buttonAdv2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAdv2.IsBackStageButton = false;
-            this.buttonAdv2.KeepFocusRectangle = false;
-            this.buttonAdv2.Location = new System.Drawing.Point(90, 3);
-            this.buttonAdv2.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
-            this.buttonAdv2.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(150)))), ((int)(((byte)(9)))));
-            this.buttonAdv2.Name = "buttonAdv2";
-            this.buttonAdv2.Size = new System.Drawing.Size(78, 37);
-            this.buttonAdv2.TabIndex = 12;
-            this.buttonAdv2.Text = "Save";
-            this.buttonAdv2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonAdv2.UseVisualStyle = true;
-            // 
-            // buttonAdv3
-            // 
-            this.buttonAdv3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonAdv3.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
-            this.buttonAdv3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.buttonAdv3.BeforeTouchSize = new System.Drawing.Size(78, 37);
-            this.buttonAdv3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.buttonAdv3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.buttonAdv3.Image = global::PrivateDoctorSolution.Properties.Resources.Addbtn;
-            this.buttonAdv3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAdv3.IsBackStageButton = false;
-            this.buttonAdv3.KeepFocusRectangle = false;
-            this.buttonAdv3.Location = new System.Drawing.Point(90, 3);
-            this.buttonAdv3.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
-            this.buttonAdv3.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(150)))), ((int)(((byte)(9)))));
-            this.buttonAdv3.Name = "buttonAdv3";
-            this.buttonAdv3.Size = new System.Drawing.Size(78, 37);
-            this.buttonAdv3.TabIndex = 13;
-            this.buttonAdv3.Text = "Save";
-            this.buttonAdv3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonAdv3.UseVisualStyle = true;
-            // 
-            // buttonAdv4
-            // 
-            this.buttonAdv4.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
-            this.buttonAdv4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.buttonAdv4.BeforeTouchSize = new System.Drawing.Size(54, 44);
-            this.buttonAdv4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.buttonAdv4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.buttonAdv4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.buttonAdv4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAdv4.IsBackStageButton = false;
-            this.buttonAdv4.KeepFocusRectangle = false;
-            this.buttonAdv4.Location = new System.Drawing.Point(147, 0);
-            this.buttonAdv4.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
-            this.buttonAdv4.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(73)))), ((int)(((byte)(164)))));
-            this.buttonAdv4.Name = "buttonAdv4";
-            this.buttonAdv4.Size = new System.Drawing.Size(54, 44);
-            this.buttonAdv4.TabIndex = 15;
-            this.buttonAdv4.Text = "Save";
-            this.buttonAdv4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonAdv4.UseVisualStyle = true;
-            // 
-            // buttonAdv5
-            // 
-            this.buttonAdv5.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
-            this.buttonAdv5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.buttonAdv5.BeforeTouchSize = new System.Drawing.Size(54, 44);
-            this.buttonAdv5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.buttonAdv5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.buttonAdv5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.buttonAdv5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAdv5.IsBackStageButton = false;
-            this.buttonAdv5.KeepFocusRectangle = false;
-            this.buttonAdv5.Location = new System.Drawing.Point(201, 0);
-            this.buttonAdv5.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
-            this.buttonAdv5.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(73)))), ((int)(((byte)(164)))));
-            this.buttonAdv5.Name = "buttonAdv5";
-            this.buttonAdv5.Size = new System.Drawing.Size(54, 44);
-            this.buttonAdv5.TabIndex = 16;
-            this.buttonAdv5.Text = "Print";
-            this.buttonAdv5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonAdv5.UseVisualStyle = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(380, 7);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(170, 29);
-            this.comboBox1.TabIndex = 17;
-            // 
             // PrescriptionControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -401,11 +356,9 @@
         private System.Windows.Forms.DateTimePicker DateTime;
         private System.Windows.Forms.FlowLayoutPanel TestPanel;
         private System.Windows.Forms.FlowLayoutPanel MedicinePanel;
-        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv2;
-        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv5;
-        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv4;
-        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv1;
+        private System.Windows.Forms.ComboBox PrescriptionID;
+        private Syncfusion.Windows.Forms.ButtonAdv PrintButton;
+        private Syncfusion.Windows.Forms.ButtonAdv SaveButton;
+        private Syncfusion.Windows.Forms.ButtonAdv NewButton;
     }
 }

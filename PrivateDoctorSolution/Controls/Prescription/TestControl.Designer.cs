@@ -36,9 +36,8 @@
             this.buttonAdv1 = new Syncfusion.Windows.Forms.ButtonAdv();
             this.IssueDate = new System.Windows.Forms.DateTimePicker();
             this.NameTextBox = new System.Windows.Forms.TextBox();
-            this.StatusComboBox = new Syncfusion.Windows.Forms.Tools.ComboBoxAdv();
+            this.StatusComboBox = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.StatusComboBox)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -68,8 +67,8 @@
             this.tableLayoutPanel1.Controls.Add(this.label1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.buttonAdv1, 7, 0);
-            this.tableLayoutPanel1.Controls.Add(this.IssueDate, 6, 0);
             this.tableLayoutPanel1.Controls.Add(this.NameTextBox, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.IssueDate, 6, 0);
             this.tableLayoutPanel1.Controls.Add(this.StatusComboBox, 4, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -118,7 +117,7 @@
             this.buttonAdv1.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.buttonAdv1.Name = "buttonAdv1";
             this.buttonAdv1.Size = new System.Drawing.Size(71, 40);
-            this.buttonAdv1.TabIndex = 12;
+            this.buttonAdv1.TabIndex = 4;
             this.buttonAdv1.UseVisualStyle = true;
             this.buttonAdv1.Click += new System.EventHandler(this.buttonAdv1_Click);
             // 
@@ -129,7 +128,8 @@
             this.IssueDate.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.IssueDate.Name = "IssueDate";
             this.IssueDate.Size = new System.Drawing.Size(233, 22);
-            this.IssueDate.TabIndex = 15;
+            this.IssueDate.TabIndex = 3;
+            this.IssueDate.ValueChanged += new System.EventHandler(this.IssueDate_ValueChanged);
             // 
             // NameTextBox
             // 
@@ -138,22 +138,21 @@
             this.NameTextBox.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.NameTextBox.Name = "NameTextBox";
             this.NameTextBox.Size = new System.Drawing.Size(181, 22);
-            this.NameTextBox.TabIndex = 18;
+            this.NameTextBox.TabIndex = 1;
+            this.NameTextBox.TextChanged += new System.EventHandler(this.NameTextBox_TextChanged);
             // 
             // StatusComboBox
             // 
-            this.StatusComboBox.AllowNewText = false;
-            this.StatusComboBox.BeforeTouchSize = new System.Drawing.Size(163, 24);
-            this.StatusComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.StatusComboBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.StatusComboBox.FormattingEnabled = true;
             this.StatusComboBox.Items.AddRange(new object[] {
             "Pending",
             "Complete",
             "Redo"});
-            this.StatusComboBox.Location = new System.Drawing.Point(316, 10);
-            this.StatusComboBox.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.StatusComboBox.Location = new System.Drawing.Point(319, 9);
             this.StatusComboBox.Name = "StatusComboBox";
-            this.StatusComboBox.Size = new System.Drawing.Size(163, 24);
-            this.StatusComboBox.TabIndex = 19;
+            this.StatusComboBox.Size = new System.Drawing.Size(167, 21);
+            this.StatusComboBox.TabIndex = 2;
             // 
             // TestControl
             // 
@@ -164,7 +163,6 @@
             this.Size = new System.Drawing.Size(850, 40);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.StatusComboBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -178,6 +176,6 @@
         private System.Windows.Forms.DateTimePicker IssueDate;
         private Syncfusion.Windows.Forms.ButtonAdv buttonAdv1;
         private System.Windows.Forms.TextBox NameTextBox;
-        private Syncfusion.Windows.Forms.Tools.ComboBoxAdv StatusComboBox;
+        private System.Windows.Forms.ComboBox StatusComboBox;
     }
 }

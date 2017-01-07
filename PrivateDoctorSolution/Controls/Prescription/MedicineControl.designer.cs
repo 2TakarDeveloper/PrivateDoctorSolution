@@ -52,6 +52,7 @@
             this.NameBox.Size = new System.Drawing.Size(148, 24);
             this.NameBox.TabIndex = 20;
             this.NameBox.Text = "Medicine Name";
+            this.NameBox.TextChanged += new System.EventHandler(this.NameBox_TextChanged);
             // 
             // EndDate
             // 
@@ -61,6 +62,7 @@
             this.EndDate.Name = "EndDate";
             this.EndDate.Size = new System.Drawing.Size(235, 22);
             this.EndDate.TabIndex = 16;
+            this.EndDate.ValueChanged += new System.EventHandler(this.EndDate_ValueChanged);
             // 
             // IntervalTextBox
             // 
@@ -70,6 +72,7 @@
             this.IntervalTextBox.Name = "IntervalTextBox";
             this.IntervalTextBox.Size = new System.Drawing.Size(161, 22);
             this.IntervalTextBox.TabIndex = 18;
+            this.IntervalTextBox.TextChanged += new System.EventHandler(this.IntervalTextBox_TextChanged);
             // 
             // label1
             // 
@@ -90,6 +93,7 @@
             this.StartDate.Name = "StartDate";
             this.StartDate.Size = new System.Drawing.Size(237, 22);
             this.StartDate.TabIndex = 15;
+            this.StartDate.ValueChanged += new System.EventHandler(this.StartDate_ValueChanged);
             // 
             // label2
             // 
