@@ -31,10 +31,10 @@
             this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanelSideBar = new System.Windows.Forms.FlowLayoutPanel();
-            this.buttonAdv1 = new Syncfusion.Windows.Forms.ButtonAdv();
-            this.buttonAdv2 = new Syncfusion.Windows.Forms.ButtonAdv();
-            this.buttonAdv3 = new Syncfusion.Windows.Forms.ButtonAdv();
-            this.buttonAdv4 = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.InboxButton = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.JunkButton = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.SentButton = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.DraftButton = new Syncfusion.Windows.Forms.ButtonAdv();
             this.flowLayoutPanelBody = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayout1 = new Syncfusion.Windows.Forms.Tools.FlowLayout(this.components);
             this.tableLayoutPanel1.SuspendLayout();
@@ -61,10 +61,10 @@
             // flowLayoutPanelSideBar
             // 
             this.flowLayoutPanelSideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.flowLayoutPanelSideBar.Controls.Add(this.buttonAdv1);
-            this.flowLayoutPanelSideBar.Controls.Add(this.buttonAdv2);
-            this.flowLayoutPanelSideBar.Controls.Add(this.buttonAdv3);
-            this.flowLayoutPanelSideBar.Controls.Add(this.buttonAdv4);
+            this.flowLayoutPanelSideBar.Controls.Add(this.InboxButton);
+            this.flowLayoutPanelSideBar.Controls.Add(this.JunkButton);
+            this.flowLayoutPanelSideBar.Controls.Add(this.SentButton);
+            this.flowLayoutPanelSideBar.Controls.Add(this.DraftButton);
             this.flowLayoutPanelSideBar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanelSideBar.Location = new System.Drawing.Point(0, 60);
             this.flowLayoutPanelSideBar.Margin = new System.Windows.Forms.Padding(0);
@@ -72,86 +72,86 @@
             this.flowLayoutPanelSideBar.Size = new System.Drawing.Size(200, 365);
             this.flowLayoutPanelSideBar.TabIndex = 0;
             // 
-            // buttonAdv1
+            // InboxButton
             // 
-            this.buttonAdv1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
-            this.buttonAdv1.BackColor = System.Drawing.Color.Transparent;
-            this.buttonAdv1.BeforeTouchSize = new System.Drawing.Size(200, 35);
-            this.buttonAdv1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.buttonAdv1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAdv1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.buttonAdv1.IsBackStageButton = false;
-            this.buttonAdv1.KeepFocusRectangle = false;
-            this.buttonAdv1.Location = new System.Drawing.Point(0, 0);
-            this.buttonAdv1.Margin = new System.Windows.Forms.Padding(0);
-            this.buttonAdv1.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.buttonAdv1.Name = "buttonAdv1";
-            this.buttonAdv1.Size = new System.Drawing.Size(200, 35);
-            this.buttonAdv1.TabIndex = 0;
-            this.buttonAdv1.Text = "Inbox   100            ";
-            this.buttonAdv1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonAdv1.UseVisualStyle = true;
-            this.buttonAdv1.Click += new System.EventHandler(this.buttonAdv1_Click);
+            this.InboxButton.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
+            this.InboxButton.BackColor = System.Drawing.Color.Transparent;
+            this.InboxButton.BeforeTouchSize = new System.Drawing.Size(200, 35);
+            this.InboxButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.InboxButton.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InboxButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.InboxButton.IsBackStageButton = false;
+            this.InboxButton.KeepFocusRectangle = false;
+            this.InboxButton.Location = new System.Drawing.Point(0, 0);
+            this.InboxButton.Margin = new System.Windows.Forms.Padding(0);
+            this.InboxButton.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.InboxButton.Name = "InboxButton";
+            this.InboxButton.Size = new System.Drawing.Size(200, 35);
+            this.InboxButton.TabIndex = 0;
+            this.InboxButton.Text = "Inbox                    ";
+            this.InboxButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.InboxButton.UseVisualStyle = true;
+            this.InboxButton.Click += new System.EventHandler(this.InboxButton_Click);
             // 
-            // buttonAdv2
+            // JunkButton
             // 
-            this.buttonAdv2.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
-            this.buttonAdv2.BackColor = System.Drawing.Color.Transparent;
-            this.buttonAdv2.BeforeTouchSize = new System.Drawing.Size(200, 35);
-            this.buttonAdv2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.buttonAdv2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAdv2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.buttonAdv2.IsBackStageButton = false;
-            this.buttonAdv2.KeepFocusRectangle = false;
-            this.buttonAdv2.Location = new System.Drawing.Point(0, 35);
-            this.buttonAdv2.Margin = new System.Windows.Forms.Padding(0);
-            this.buttonAdv2.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.buttonAdv2.Name = "buttonAdv2";
-            this.buttonAdv2.Size = new System.Drawing.Size(200, 35);
-            this.buttonAdv2.TabIndex = 1;
-            this.buttonAdv2.Text = "Junk Email            ";
-            this.buttonAdv2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonAdv2.UseVisualStyle = true;
+            this.JunkButton.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
+            this.JunkButton.BackColor = System.Drawing.Color.Transparent;
+            this.JunkButton.BeforeTouchSize = new System.Drawing.Size(200, 35);
+            this.JunkButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.JunkButton.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.JunkButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.JunkButton.IsBackStageButton = false;
+            this.JunkButton.KeepFocusRectangle = false;
+            this.JunkButton.Location = new System.Drawing.Point(0, 35);
+            this.JunkButton.Margin = new System.Windows.Forms.Padding(0);
+            this.JunkButton.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.JunkButton.Name = "JunkButton";
+            this.JunkButton.Size = new System.Drawing.Size(200, 35);
+            this.JunkButton.TabIndex = 1;
+            this.JunkButton.Text = "Junk Email            ";
+            this.JunkButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.JunkButton.UseVisualStyle = true;
             // 
-            // buttonAdv3
+            // SentButton
             // 
-            this.buttonAdv3.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
-            this.buttonAdv3.BackColor = System.Drawing.Color.Transparent;
-            this.buttonAdv3.BeforeTouchSize = new System.Drawing.Size(200, 35);
-            this.buttonAdv3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.buttonAdv3.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAdv3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.buttonAdv3.IsBackStageButton = false;
-            this.buttonAdv3.KeepFocusRectangle = false;
-            this.buttonAdv3.Location = new System.Drawing.Point(0, 70);
-            this.buttonAdv3.Margin = new System.Windows.Forms.Padding(0);
-            this.buttonAdv3.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.buttonAdv3.Name = "buttonAdv3";
-            this.buttonAdv3.Size = new System.Drawing.Size(200, 35);
-            this.buttonAdv3.TabIndex = 2;
-            this.buttonAdv3.Text = "Sent                       ";
-            this.buttonAdv3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonAdv3.UseVisualStyle = true;
+            this.SentButton.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
+            this.SentButton.BackColor = System.Drawing.Color.Transparent;
+            this.SentButton.BeforeTouchSize = new System.Drawing.Size(200, 35);
+            this.SentButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.SentButton.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SentButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.SentButton.IsBackStageButton = false;
+            this.SentButton.KeepFocusRectangle = false;
+            this.SentButton.Location = new System.Drawing.Point(0, 70);
+            this.SentButton.Margin = new System.Windows.Forms.Padding(0);
+            this.SentButton.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.SentButton.Name = "SentButton";
+            this.SentButton.Size = new System.Drawing.Size(200, 35);
+            this.SentButton.TabIndex = 2;
+            this.SentButton.Text = "Sent                       ";
+            this.SentButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.SentButton.UseVisualStyle = true;
             // 
-            // buttonAdv4
+            // DraftButton
             // 
-            this.buttonAdv4.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
-            this.buttonAdv4.BackColor = System.Drawing.Color.Transparent;
-            this.buttonAdv4.BeforeTouchSize = new System.Drawing.Size(200, 35);
-            this.buttonAdv4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.buttonAdv4.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAdv4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.buttonAdv4.IsBackStageButton = false;
-            this.buttonAdv4.KeepFocusRectangle = false;
-            this.buttonAdv4.Location = new System.Drawing.Point(0, 105);
-            this.buttonAdv4.Margin = new System.Windows.Forms.Padding(0);
-            this.buttonAdv4.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.buttonAdv4.Name = "buttonAdv4";
-            this.buttonAdv4.Size = new System.Drawing.Size(200, 35);
-            this.buttonAdv4.TabIndex = 3;
-            this.buttonAdv4.Text = "Draft                      ";
-            this.buttonAdv4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonAdv4.UseVisualStyle = true;
+            this.DraftButton.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
+            this.DraftButton.BackColor = System.Drawing.Color.Transparent;
+            this.DraftButton.BeforeTouchSize = new System.Drawing.Size(200, 35);
+            this.DraftButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.DraftButton.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DraftButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.DraftButton.IsBackStageButton = false;
+            this.DraftButton.KeepFocusRectangle = false;
+            this.DraftButton.Location = new System.Drawing.Point(0, 105);
+            this.DraftButton.Margin = new System.Windows.Forms.Padding(0);
+            this.DraftButton.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.DraftButton.Name = "DraftButton";
+            this.DraftButton.Size = new System.Drawing.Size(200, 35);
+            this.DraftButton.TabIndex = 3;
+            this.DraftButton.Text = "Draft                      ";
+            this.DraftButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.DraftButton.UseVisualStyle = true;
             // 
             // flowLayoutPanelBody
             // 
@@ -188,10 +188,10 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelSideBar;
-        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv1;
-        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv2;
-        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv3;
-        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv4;
+        private Syncfusion.Windows.Forms.ButtonAdv InboxButton;
+        private Syncfusion.Windows.Forms.ButtonAdv JunkButton;
+        private Syncfusion.Windows.Forms.ButtonAdv SentButton;
+        private Syncfusion.Windows.Forms.ButtonAdv DraftButton;
         private Syncfusion.Windows.Forms.Tools.FlowLayout flowLayout1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelBody;
     }

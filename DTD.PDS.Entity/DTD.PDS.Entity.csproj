@@ -52,6 +52,7 @@
     <Compile Include="DatabaseTableClasses\Medication.cs" />
     <Compile Include="DatabaseTableClasses\Patient.cs" />
     <Compile Include="DatabaseTableClasses\Prescription.cs" />
+    <Compile Include="MailClasses\InboxInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DatabaseTableClasses\Test.cs" />
   </ItemGroup>

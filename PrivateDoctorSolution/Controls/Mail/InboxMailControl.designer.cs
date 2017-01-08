@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.NameX = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.Subject = new Syncfusion.Windows.Forms.ButtonAdv();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.buttonAdv3 = new Syncfusion.Windows.Forms.ButtonAdv();
-            this.buttonAdv1 = new Syncfusion.Windows.Forms.ButtonAdv();
-            this.buttonAdv4 = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.Date = new Syncfusion.Windows.Forms.ButtonAdv();
             this.buttonAdv2 = new Syncfusion.Windows.Forms.ButtonAdv();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -47,10 +47,10 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 300F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel1.Controls.Add(this.buttonAdv4, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.buttonAdv3, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.NameX, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.Subject, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.checkBox1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.buttonAdv1, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.Date, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.buttonAdv2, 4, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -60,6 +60,48 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 40);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // NameX
+            // 
+            this.NameX.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
+            this.NameX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.NameX.BeforeTouchSize = new System.Drawing.Size(187, 34);
+            this.NameX.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NameX.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.NameX.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.NameX.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.NameX.IsBackStageButton = false;
+            this.NameX.KeepFocusRectangle = false;
+            this.NameX.Location = new System.Drawing.Point(43, 3);
+            this.NameX.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
+            this.NameX.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.NameX.Name = "NameX";
+            this.NameX.Size = new System.Drawing.Size(187, 34);
+            this.NameX.TabIndex = 14;
+            this.NameX.Text = "Name";
+            this.NameX.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.NameX.UseVisualStyle = true;
+            // 
+            // Subject
+            // 
+            this.Subject.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
+            this.Subject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.Subject.BeforeTouchSize = new System.Drawing.Size(287, 34);
+            this.Subject.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Subject.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.Subject.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.Subject.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Subject.IsBackStageButton = false;
+            this.Subject.KeepFocusRectangle = false;
+            this.Subject.Location = new System.Drawing.Point(243, 3);
+            this.Subject.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
+            this.Subject.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.Subject.Name = "Subject";
+            this.Subject.Size = new System.Drawing.Size(287, 34);
+            this.Subject.TabIndex = 12;
+            this.Subject.Text = "Description of email";
+            this.Subject.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Subject.UseVisualStyle = true;
             // 
             // checkBox1
             // 
@@ -71,68 +113,26 @@
             this.checkBox1.TabIndex = 0;
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // buttonAdv3
+            // Date
             // 
-            this.buttonAdv3.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
-            this.buttonAdv3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.buttonAdv3.BeforeTouchSize = new System.Drawing.Size(287, 34);
-            this.buttonAdv3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonAdv3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.buttonAdv3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.buttonAdv3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAdv3.IsBackStageButton = false;
-            this.buttonAdv3.KeepFocusRectangle = false;
-            this.buttonAdv3.Location = new System.Drawing.Point(243, 3);
-            this.buttonAdv3.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
-            this.buttonAdv3.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.buttonAdv3.Name = "buttonAdv3";
-            this.buttonAdv3.Size = new System.Drawing.Size(287, 34);
-            this.buttonAdv3.TabIndex = 12;
-            this.buttonAdv3.Text = "Description of email";
-            this.buttonAdv3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonAdv3.UseVisualStyle = true;
-            // 
-            // buttonAdv1
-            // 
-            this.buttonAdv1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
-            this.buttonAdv1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.buttonAdv1.BeforeTouchSize = new System.Drawing.Size(187, 34);
-            this.buttonAdv1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonAdv1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.buttonAdv1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.buttonAdv1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAdv1.IsBackStageButton = false;
-            this.buttonAdv1.KeepFocusRectangle = false;
-            this.buttonAdv1.Location = new System.Drawing.Point(543, 3);
-            this.buttonAdv1.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
-            this.buttonAdv1.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.buttonAdv1.Name = "buttonAdv1";
-            this.buttonAdv1.Size = new System.Drawing.Size(187, 34);
-            this.buttonAdv1.TabIndex = 13;
-            this.buttonAdv1.Text = "Date";
-            this.buttonAdv1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonAdv1.UseVisualStyle = true;
-            // 
-            // buttonAdv4
-            // 
-            this.buttonAdv4.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
-            this.buttonAdv4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.buttonAdv4.BeforeTouchSize = new System.Drawing.Size(187, 34);
-            this.buttonAdv4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonAdv4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.buttonAdv4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.buttonAdv4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAdv4.IsBackStageButton = false;
-            this.buttonAdv4.KeepFocusRectangle = false;
-            this.buttonAdv4.Location = new System.Drawing.Point(43, 3);
-            this.buttonAdv4.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
-            this.buttonAdv4.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.buttonAdv4.Name = "buttonAdv4";
-            this.buttonAdv4.Size = new System.Drawing.Size(187, 34);
-            this.buttonAdv4.TabIndex = 14;
-            this.buttonAdv4.Text = "Name";
-            this.buttonAdv4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonAdv4.UseVisualStyle = true;
+            this.Date.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
+            this.Date.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.Date.BeforeTouchSize = new System.Drawing.Size(187, 34);
+            this.Date.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Date.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.Date.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.Date.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Date.IsBackStageButton = false;
+            this.Date.KeepFocusRectangle = false;
+            this.Date.Location = new System.Drawing.Point(543, 3);
+            this.Date.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
+            this.Date.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.Date.Name = "Date";
+            this.Date.Size = new System.Drawing.Size(187, 34);
+            this.Date.TabIndex = 13;
+            this.Date.Text = "Date";
+            this.Date.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Date.UseVisualStyle = true;
             // 
             // buttonAdv2
             // 
@@ -171,9 +171,9 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.CheckBox checkBox1;
-        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv4;
-        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv3;
-        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv1;
+        private Syncfusion.Windows.Forms.ButtonAdv NameX;
+        private Syncfusion.Windows.Forms.ButtonAdv Subject;
+        private Syncfusion.Windows.Forms.ButtonAdv Date;
         private Syncfusion.Windows.Forms.ButtonAdv buttonAdv2;
     }
 }
