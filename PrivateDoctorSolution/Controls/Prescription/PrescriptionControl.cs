@@ -1,15 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Data;
+using System.IO;
 using System.Linq;
 using System.Text;
 using DTD.PDS.Entity.DatabaseTableClasses;
 using System.Windows.Forms;
 using DTD.PDS.BLL.Repo;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
 using PrivateDoctorSolution.Forms;
 using Syncfusion.Windows.Forms.Tools;
+
 
 namespace PrivateDoctorSolution.Controls.Prescription
 {
@@ -183,12 +186,129 @@ namespace PrivateDoctorSolution.Controls.Prescription
 
             }
 
+            LoadTests();
+            LoadMedications();
 
         }
 
         private void PrintButton_Click(object sender, EventArgs e)
         {
+            CreatePdf();
+        }
+
+        private void CreatePdf()
+        {
+            //Create PDF
+            string dummyFileName = "Prescription.pdf";
+
+
+            SaveFileDialog sf = new SaveFileDialog();
+            sf.Filter = @"Portable Document Format (PDF)|*.pdf";
+
+            // Feed the dummy name to the save dialog
+            sf.FileName = dummyFileName;
+
+            if (sf.ShowDialog() == DialogResult.OK)
+            {
+                // Now here's our save folder
+                string savePath = Path.GetDirectoryName(sf.FileName);
+                if (savePath == null) return;
+                savePath = Path.Combine(savePath, sf.FileName);
+
+                // Do whatever
+                using (var fileStream = new FileStream(savePath, FileMode.Create, FileAccess.Write, FileShare.None))
+                {
+
+                    Rectangle pageSize = new Rectangle(PageSize.A4);
+                    Document doc = new Document(pageSize);
+                    PdfWriter writer = PdfWriter.GetInstance(doc, fileStream);
+                    doc.Open();
+
+
+
+
+                    //setupTable
+                    PdfPTable table = new PdfPTable(5);
+
+                    PdfPCell cell = new PdfPCell(new Phrase("Prescription"));
+                    cell.Colspan = 5;
+                    cell.HorizontalAlignment = 1;
+                    table.AddCell(cell);
+
+
+
+                    
+
+                    cell = new PdfPCell(new Phrase("Medication"));
+                    cell.Colspan = 5;
+                    cell.HorizontalAlignment = 1;
+                    table.AddCell(cell);
+
+
+
+                    table.AddCell("#Sl");
+                    table.AddCell("Medicine  Name");
+                    table.AddCell("Start Date");
+                    table.AddCell("End Date");
+                    table.AddCell("Interval");
+
+
+
+                    int counter = 0;
+                    foreach (var medication in Medications)
+                    {
+
+                        table.AddCell(counter++.ToString());
+                        table.AddCell(medication.MedicineName);
+                        table.AddCell(medication.StartDate.ToString());
+                        table.AddCell(medication.EndDate.ToString());
+                        table.AddCell(medication.Interval.ToString());
+                    }
+
+
+                    cell = new PdfPCell(new Phrase("Tests"));
+                    cell.Colspan = 5;
+                    cell.HorizontalAlignment = 1;
+                    table.AddCell(cell);
+
+
+
+                    table.AddCell("#Sl");
+                    table.AddCell("Test Name");
+                    table.AddCell("Status");
+                    cell = new PdfPCell(new Phrase("Issue Date"));
+                    cell.Colspan = 2;
+                    cell.HorizontalAlignment = 1;
+                    table.AddCell(cell);
+
+
+                    counter = 0;
+                    foreach (var test in Tests)
+                    {
+
+                        table.AddCell(counter++.ToString());
+                        table.AddCell(test.TestName);
+                        table.AddCell(test.Status.ToString());
+                        cell = new PdfPCell(new Phrase(test.IssueDate.ToString()));
+                        cell.Colspan = 2;
+                        cell.HorizontalAlignment = 1;
+                        table.AddCell(cell);
+
+                    }
+
+
+
+
+
+
+
+                    doc.Add(table);
+
+                    doc.Close();
+                }
+            }
 
         }
+
     }
 }

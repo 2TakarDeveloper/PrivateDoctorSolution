@@ -31,8 +31,20 @@ namespace DTD.PDS.BLL.Repo
 
         public bool Remove(Prescription prescription)
         {
-            
-             return new PrescriptionContext().Remove(prescription);
+
+            List<Medication> medications=new MedicationRepo().GetAll(prescription.Id);
+            List<Test> tests = new TestRepo().GetAll(prescription.Id);
+            foreach (var test in tests)
+            {
+                new TestRepo().Remove(test);
+            }
+
+            foreach (var medication in medications)
+            {
+                new MedicationRepo().Remove(medication);
+            }
+
+            return new PrescriptionContext().Remove(prescription);
         }
 
         public bool Update(Prescription prescription)
