@@ -24,22 +24,34 @@ namespace PrivateDoctorSolution.Controls.Mail
         public EmailControl()
         {
             InitializeComponent();
-            ImapServerAddress = "imap-mail.outlook.com";
-
-            EmailAddress = "tazimtazim2012@hotmail.com";
-            EmailPassword = "darks1d1ers";
           
-            BackgroundWorker backgroundWorker= new BackgroundWorker();
-            backgroundWorker.DoWork += ReadEmail;
-            backgroundWorker.RunWorkerCompleted += BackgroundWorker_RunWorkerCompleted;
-            backgroundWorker.RunWorkerAsync();
+            switch (EmailServer.Text)
+            {
+                case "Live":
+                    ImapServerAddress = "imap-mail.outlook.com";
+                    break;
+                case "Gmail":
+                    ImapServerAddress = "imap.gmail.com";
+                    break;
+                case "Yahoo":
+                    ImapServerAddress = "imap.mail.yahoo.com";
+                    break;
+                default:
+                    ImapServerAddress = "imap-mail.outlook.com";
+                    break;
+            }
+
+            EmailAddress = EmailAddressTextBox.Text;
+            EmailPassword = EmailPasswordTextBox.Text;
+
         }
 
         private void BackgroundWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
+            flowLayoutPanelBody.Controls.Clear();
             foreach (var inboxInfo in InboxInfos)
             {
-                var im = new InboxMailControl(inboxInfo);
+                var im = new InboxMailControl(inboxInfo) {Dock = DockStyle.Top};
                 flowLayoutPanelBody.Controls.Add(im);
             }
             
@@ -51,7 +63,7 @@ namespace PrivateDoctorSolution.Controls.Mail
             // The default port for IMAP over SSL is 993.
            using (ImapClient client =  new ImapClient(ImapServerAddress, 993, EmailAddress, EmailPassword, AuthMethod.Login, true))
             {
-                flowLayoutPanelBody.Controls.Clear();
+                
                 IEnumerable<uint> uids = client.Search(SearchCondition.Unseen());
                 // Download mail messages from the default mailbox.
                 Messages = new List<MailMessage>();
@@ -78,12 +90,36 @@ namespace PrivateDoctorSolution.Controls.Mail
 
         }
 
-
-       
-
-        private  void InboxButton_Click(object sender, EventArgs e)
+        private void ReloadButton_Click(object sender, EventArgs e)
         {
-            
+          ReloadMails();
+        }
+
+        private void ReloadMails()
+        {
+            switch (EmailServer.Text)
+            {
+                case "Live":
+                    ImapServerAddress = "imap-mail.outlook.com";
+                    break;
+                case "Gmail":
+                    ImapServerAddress = "imap.gmail.com";
+                    break;
+                case "Yahoo":
+                    ImapServerAddress = "imap.mail.yahoo.com";
+                    break;
+                default:
+                    ImapServerAddress = "imap-mail.outlook.com";
+                    break;
+            }
+
+            EmailAddress = EmailAddressTextBox.Text;
+            EmailPassword = EmailPasswordTextBox.Text;
+
+            BackgroundWorker backgroundWorker = new BackgroundWorker();
+            backgroundWorker.DoWork += ReadEmail;
+            backgroundWorker.RunWorkerCompleted += BackgroundWorker_RunWorkerCompleted;
+            backgroundWorker.RunWorkerAsync();
         }
     }
 }

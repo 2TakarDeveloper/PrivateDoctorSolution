@@ -8,9 +8,10 @@ namespace PrivateDoctorSolution.Controls.Mail
         public InboxMailControl(InboxInfo inboxInfo)
         {
             InitializeComponent();
-            NameX.Text = inboxInfo.SenderName;
-            Subject.Text = inboxInfo.SubjectName;
-            Date.Text = inboxInfo.Date;
+            string text = inboxInfo.Date+"       " + inboxInfo.SenderName+"         " + inboxInfo.SubjectName;
+            MailButton.Text = text;
+
+
         }
     }
 }
