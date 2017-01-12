@@ -7,7 +7,7 @@ using System.Net.Mail;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DTD.PDS.Entity.MailClasses;
+
 using S22.Imap;
 
 
@@ -18,29 +18,16 @@ namespace PrivateDoctorSolution.Controls.Mail
         private string EmailAddress { get; set; }
         private string EmailPassword { get; set; }
         private string ImapServerAddress { get; set; }
-        private List<InboxInfo>  InboxInfos { get; set; }
+       
         private IEnumerable<MailMessage> Messages { get; set; }
 
         public EmailControl()
         {
             InitializeComponent();
           
-            switch (EmailServer.Text)
-            {
-                case "Live":
-                    ImapServerAddress = "imap-mail.outlook.com";
-                    break;
-                case "Gmail":
-                    ImapServerAddress = "imap.gmail.com";
-                    break;
-                case "Yahoo":
-                    ImapServerAddress = "imap.mail.yahoo.com";
-                    break;
-                default:
-                    ImapServerAddress = "imap-mail.outlook.com";
-                    break;
-            }
+           
 
+            LoadSettings();
             EmailAddress = EmailAddressTextBox.Text;
             EmailPassword = EmailPasswordTextBox.Text;
 
@@ -49,9 +36,9 @@ namespace PrivateDoctorSolution.Controls.Mail
         private void BackgroundWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             flowLayoutPanelBody.Controls.Clear();
-            foreach (var inboxInfo in InboxInfos)
+            foreach (var mail in Messages)
             {
-                var im = new InboxMailControl(inboxInfo) {Dock = DockStyle.Top};
+                var im = new InboxMailControl(mail) {Dock = DockStyle.Top};
                 flowLayoutPanelBody.Controls.Add(im);
             }
             
@@ -67,20 +54,10 @@ namespace PrivateDoctorSolution.Controls.Mail
                 IEnumerable<uint> uids = client.Search(SearchCondition.Unseen());
                 // Download mail messages from the default mailbox.
                 Messages = new List<MailMessage>();
-                InboxInfos = new List<InboxInfo>();
+             
                 Messages =  client.GetMessages(uids);
           
-                foreach (var message in Messages)
-                {
-                    InboxInfo inboxInfo = new InboxInfo
-                    {
-                        SubjectName = message.Subject,
-                        Date = message.Date().ToString(),
-                        SenderName = message.From.ToString()
-                    };
-                    InboxInfos.Add(inboxInfo);
-                  
-                }
+              
 
             }
 
@@ -92,10 +69,92 @@ namespace PrivateDoctorSolution.Controls.Mail
 
         private void ReloadButton_Click(object sender, EventArgs e)
         {
-          ReloadMails();
+            if (string.IsNullOrEmpty(EmailAddressTextBox.Text) ||
+                string.IsNullOrEmpty(EmailPasswordTextBox.Text))
+            {
+                MessageBox.Show(@"Invalid Mail or Password");
+                return;
+            }
+            try
+            {
+                ReloadMails();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
 
         private void ReloadMails()
+        {
+           
+
+            EmailAddress = EmailAddressTextBox.Text;
+            EmailPassword = EmailPasswordTextBox.Text;
+
+            BackgroundWorker backgroundWorker = new BackgroundWorker();
+            backgroundWorker.DoWork += ReadEmail;
+            backgroundWorker.RunWorkerCompleted += BackgroundWorker_RunWorkerCompleted;
+            backgroundWorker.RunWorkerAsync();
+        }
+
+        private void SaveButton_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(EmailAddressTextBox.Text) ||
+                string.IsNullOrEmpty(EmailPasswordTextBox.Text))
+            {
+                MessageBox.Show(@"Invalid Mail or Password");
+                return;
+            }
+            try
+            {
+                if (File.Exists("settings.txt"))
+                {
+                    using (StreamWriter writer = new StreamWriter("settings.txt"))
+                    {
+
+                        writer.WriteLine(EmailAddressTextBox.Text + "," + EmailPasswordTextBox.Text + "," + EmailServer.Text);
+                    }
+                }
+
+                else
+                {
+                  
+                    using (StreamWriter writer = new StreamWriter("settings.txt"))
+                    {
+
+                        writer.WriteLine(EmailAddressTextBox.Text + "," + EmailPasswordTextBox.Text+","+EmailServer.Text);
+                    }
+                    
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+
+        private void LoadSettings()
+        {
+           
+
+            using (var reader = new StreamReader("settings.txt"))
+            {
+                string line;
+               
+                while ((line = reader.ReadLine()) != null)
+                {
+                    var sarr = line.Split(',');
+                    EmailAddressTextBox.Text = sarr[0];
+                    EmailPasswordTextBox.Text = sarr[1];
+                    EmailServer.Text = sarr[2];
+                }
+            }
+        }
+
+        private void EmailServer_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (EmailServer.Text)
             {
@@ -112,14 +171,6 @@ namespace PrivateDoctorSolution.Controls.Mail
                     ImapServerAddress = "imap-mail.outlook.com";
                     break;
             }
-
-            EmailAddress = EmailAddressTextBox.Text;
-            EmailPassword = EmailPasswordTextBox.Text;
-
-            BackgroundWorker backgroundWorker = new BackgroundWorker();
-            backgroundWorker.DoWork += ReadEmail;
-            backgroundWorker.RunWorkerCompleted += BackgroundWorker_RunWorkerCompleted;
-            backgroundWorker.RunWorkerAsync();
         }
     }
 }

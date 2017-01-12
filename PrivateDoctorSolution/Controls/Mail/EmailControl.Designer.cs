@@ -30,14 +30,14 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.EmailAddressTextBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.EmailPasswordTextBox = new System.Windows.Forms.TextBox();
-            this.EmailServer = new System.Windows.Forms.ComboBox();
-            this.SaveButton = new System.Windows.Forms.Button();
             this.ReloadButton = new System.Windows.Forms.Button();
+            this.SaveButton = new System.Windows.Forms.Button();
+            this.EmailServer = new System.Windows.Forms.ComboBox();
+            this.EmailPasswordTextBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.EmailAddressTextBox = new System.Windows.Forms.TextBox();
             this.flowLayoutPanelBody = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -75,47 +75,27 @@
             this.panel1.Size = new System.Drawing.Size(840, 97);
             this.panel1.TabIndex = 3;
             // 
-            // EmailAddressTextBox
+            // ReloadButton
             // 
-            this.EmailAddressTextBox.Location = new System.Drawing.Point(141, 35);
-            this.EmailAddressTextBox.Name = "EmailAddressTextBox";
-            this.EmailAddressTextBox.Size = new System.Drawing.Size(217, 20);
-            this.EmailAddressTextBox.TabIndex = 0;
+            this.ReloadButton.Dock = System.Windows.Forms.DockStyle.Right;
+            this.ReloadButton.Location = new System.Drawing.Point(690, 0);
+            this.ReloadButton.Name = "ReloadButton";
+            this.ReloadButton.Size = new System.Drawing.Size(75, 97);
+            this.ReloadButton.TabIndex = 7;
+            this.ReloadButton.Text = "Reload";
+            this.ReloadButton.UseVisualStyleBackColor = true;
+            this.ReloadButton.Click += new System.EventHandler(this.ReloadButton_Click);
             // 
-            // label1
+            // SaveButton
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 5);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Email Server";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 38);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Email Address";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(18, 64);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Email Password";
-            // 
-            // EmailPasswordTextBox
-            // 
-            this.EmailPasswordTextBox.Location = new System.Drawing.Point(141, 64);
-            this.EmailPasswordTextBox.Name = "EmailPasswordTextBox";
-            this.EmailPasswordTextBox.Size = new System.Drawing.Size(217, 20);
-            this.EmailPasswordTextBox.TabIndex = 4;
-            this.EmailPasswordTextBox.UseSystemPasswordChar = true;
+            this.SaveButton.Dock = System.Windows.Forms.DockStyle.Right;
+            this.SaveButton.Location = new System.Drawing.Point(765, 0);
+            this.SaveButton.Name = "SaveButton";
+            this.SaveButton.Size = new System.Drawing.Size(75, 97);
+            this.SaveButton.TabIndex = 6;
+            this.SaveButton.Text = "Save Info";
+            this.SaveButton.UseVisualStyleBackColor = true;
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
             // EmailServer
             // 
@@ -128,27 +108,49 @@
             this.EmailServer.Name = "EmailServer";
             this.EmailServer.Size = new System.Drawing.Size(217, 21);
             this.EmailServer.TabIndex = 5;
+            this.EmailServer.SelectedIndexChanged += new System.EventHandler(this.EmailServer_SelectedIndexChanged);
             // 
-            // SaveButton
+            // EmailPasswordTextBox
             // 
-            this.SaveButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.SaveButton.Location = new System.Drawing.Point(765, 0);
-            this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(75, 97);
-            this.SaveButton.TabIndex = 6;
-            this.SaveButton.Text = "Save Info";
-            this.SaveButton.UseVisualStyleBackColor = true;
+            this.EmailPasswordTextBox.Location = new System.Drawing.Point(141, 64);
+            this.EmailPasswordTextBox.Name = "EmailPasswordTextBox";
+            this.EmailPasswordTextBox.Size = new System.Drawing.Size(217, 20);
+            this.EmailPasswordTextBox.TabIndex = 4;
+            this.EmailPasswordTextBox.UseSystemPasswordChar = true;
             // 
-            // ReloadButton
+            // label3
             // 
-            this.ReloadButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.ReloadButton.Location = new System.Drawing.Point(690, 0);
-            this.ReloadButton.Name = "ReloadButton";
-            this.ReloadButton.Size = new System.Drawing.Size(75, 97);
-            this.ReloadButton.TabIndex = 7;
-            this.ReloadButton.Text = "Reload";
-            this.ReloadButton.UseVisualStyleBackColor = true;
-            this.ReloadButton.Click += new System.EventHandler(this.ReloadButton_Click);
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(18, 64);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(81, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Email Password";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(18, 38);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(73, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Email Address";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(18, 5);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(66, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Email Server";
+            // 
+            // EmailAddressTextBox
+            // 
+            this.EmailAddressTextBox.Location = new System.Drawing.Point(141, 35);
+            this.EmailAddressTextBox.Name = "EmailAddressTextBox";
+            this.EmailAddressTextBox.Size = new System.Drawing.Size(217, 20);
+            this.EmailAddressTextBox.TabIndex = 0;
             // 
             // flowLayoutPanelBody
             // 

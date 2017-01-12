@@ -93,9 +93,7 @@ namespace PrivateDoctorSolution
 
         private void drawerHeaderProfile_Click(object sender, EventArgs e)
         {
-            navigationDrawer1.ContentViewContainer.Controls.Clear();
-            ProfileControl pc = new ProfileControl() { Dock = DockStyle.Fill };
-            navigationDrawer1.ContentViewContainer.Controls.Add(pc);
+            
           
         }
 

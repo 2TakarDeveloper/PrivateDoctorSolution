@@ -44,6 +44,7 @@
             this.MailButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.MailButton.UseMnemonic = false;
             this.MailButton.UseVisualStyleBackColor = false;
+            this.MailButton.Click += new System.EventHandler(this.MailButton_Click);
             // 
             // InboxMailControl
             // 
