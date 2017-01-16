@@ -7,7 +7,7 @@ using System.Net.Mail;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using PrivateDoctorSolution.Forms;
 using S22.Imap;
 
 
@@ -171,6 +171,12 @@ namespace PrivateDoctorSolution.Controls.Mail
                     ImapServerAddress = "imap-mail.outlook.com";
                     break;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            NewMail newMail= new NewMail(EmailAddress,EmailPassword,EmailServer.Text);
+            newMail.Show();
         }
     }
 }

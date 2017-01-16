@@ -399,7 +399,7 @@ namespace PrivateDoctorSolution
         /// <param name="context">The StreamingContext.</param>
         protected SimpleScheduleAppointmentList(SerializationInfo info, StreamingContext context)
         {
-            this.List = (ArrayList)info.GetValue("List", typeof(ArrayList));
+            List = (ArrayList)info.GetValue("List", typeof(ArrayList));
         }
 
         /// <summary>
@@ -447,20 +447,20 @@ namespace PrivateDoctorSolution
         /// <param name="context">The StreamingContext.</param>
         protected SimpleScheduleAppointment(SerializationInfo info, StreamingContext context)
         {
-            this.UniqueID = (int)info.GetValue("UniqueID", typeof(int));
-            this.Subject = (string)info.GetValue("Subject", typeof(string));
-            this.StartTime = (DateTime)info.GetValue("StartTime", typeof(DateTime));
-            this.ReminderValue = (int)info.GetValue("ReminderValue", typeof(int));
-            this.Reminder = (bool)info.GetValue("Reminder", typeof(bool));
-            this.Owner = (int)info.GetValue("Owner", typeof(int));
-            this.MarkerValue = (int)info.GetValue("MarkerValue", typeof(int));
-            this.LocationValue = (string)info.GetValue("LocationValue", typeof(string));
-            this.LabelValue = (int)info.GetValue("LabelValue", typeof(int));
-            this.EndTime = (DateTime)info.GetValue("EndTime", typeof(DateTime));
-            this.Content = (string)info.GetValue("Content", typeof(string));
-            this.AllDay = (bool)info.GetValue("AllDay", typeof(bool));
+            UniqueID = (int) info.GetValue("UniqueID", typeof(int));
+            Subject = (string) info.GetValue("Subject", typeof(string));
+            StartTime = (DateTime) info.GetValue("StartTime", typeof(DateTime));
+            ReminderValue = (int) info.GetValue("ReminderValue", typeof(int));
+            Reminder = (bool) info.GetValue("Reminder", typeof(bool));
+            Owner = (int) info.GetValue("Owner", typeof(int));
+            MarkerValue = (int) info.GetValue("MarkerValue", typeof(int));
+            LocationValue = (string) info.GetValue("LocationValue", typeof(string));
+            LabelValue = (int) info.GetValue("LabelValue", typeof(int));
+            EndTime = (DateTime) info.GetValue("EndTime", typeof(DateTime));
+            Content = (string) info.GetValue("Content", typeof(string));
+            AllDay = (bool) info.GetValue("AllDay", typeof(bool));
 
-            this.Dirty = false;
+            Dirty = false;
         }
 
         /// <summary>

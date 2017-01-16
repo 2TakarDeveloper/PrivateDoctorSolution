@@ -39,6 +39,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.EmailAddressTextBox = new System.Windows.Forms.TextBox();
             this.flowLayoutPanelBody = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -61,6 +62,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Info;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.ReloadButton);
             this.panel1.Controls.Add(this.SaveButton);
             this.panel1.Controls.Add(this.EmailServer);
@@ -161,6 +163,17 @@
             this.flowLayoutPanelBody.Size = new System.Drawing.Size(840, 316);
             this.flowLayoutPanelBody.TabIndex = 4;
             // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button1.Location = new System.Drawing.Point(615, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 97);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "New Mail";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // EmailControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -189,5 +202,6 @@
         private System.Windows.Forms.Button ReloadButton;
         private System.Windows.Forms.Button SaveButton;
         private System.Windows.Forms.Panel flowLayoutPanelBody;
+        private System.Windows.Forms.Button button1;
     }
 }
