@@ -76,9 +76,6 @@
       <HintPath>..\packages\iTextSharp.5.5.10\lib\itextsharp.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MetroFramework">
-      <HintPath>C:\Users\tazim\Source\Repos\ShopIM\ShopIM\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
-    </Reference>
     <Reference Include="S22.Imap, Version=3.6.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\S22.Imap.3.6.0.0\lib\net40\S22.Imap.dll</HintPath>
       <Private>True</Private>
@@ -89,8 +86,6 @@
     <Reference Include="Syncfusion.Schedule.Windows, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Shared.Base, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Shared.Windows, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-    <Reference Include="Syncfusion.SpellChecker.Base, Version=14.4460.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-    <Reference Include="Syncfusion.Tools.Base, Version=14.4460.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Tools.Windows, Version=14.4451.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
